@@ -1,0 +1,356 @@
+"","NODCCODE","Commonname","183m seine","21.3m seine","273m nylon trammel net","366m monofilament trammel net","547m nylon trammel net","6.1m otter trawl","61m seine","9.1m seine","Hook and line","Offshore Purse Seine","Family","Class","NODCCODE.1","Troph","Polar","Boreal","Temperate","Subtropical"
+"1","8707100101","Nurse Shark",19,NA,NA,3,NA,15,NA,NA,NA,NA,"Ginglymostomatidae","Elasmobranchii","8707100101",4.29666666666667,0,-2,-3,-5
+"2","8708020301","Atlantic Sharpnose Shark",96,5,NA,NA,NA,15,NA,NA,NA,NA,"Carcharhinidae","Elasmobranchii","8708020301",4.3025,0,-1,-5,-2
+"3","8708020502","Bull Shark",39,1,NA,15,1,NA,NA,NA,NA,NA,"Carcharhinidae","Elasmobranchii","8708020502",4.31,0,-3,-8,-22
+"4","8708020504","Blacknose Shark",3,NA,NA,1,NA,NA,NA,NA,NA,4,"Carcharhinidae","Elasmobranchii","8708020504",4.355,0,-1,-2,-2
+"5","8708020507","Blacktip Shark",66,3,NA,7,3,4,NA,NA,3,2,"Carcharhinidae","Elasmobranchii","8708020507",4.375,0,-3,-8,-15
+"6","8708020530","Spinner Shark",2,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Carcharhinidae","Elasmobranchii","8708020530",4.2,0,-3,-5,-13
+"7","8708020531","Finetooth Shark",5,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Carcharhinidae","Elasmobranchii","8708020531",4.2,0,-1,-2,-2
+"8","8708020801","Lemon Shark",12,NA,NA,3,2,NA,NA,NA,NA,NA,"Carcharhinidae","Elasmobranchii","8708020801",4.3825,0,-2,-2,-4
+"9","8708030101","Bonnethead",1260,25,NA,55,37,33,NA,NA,32,NA,"Sphyrnidae","Elasmobranchii","8708030101",3.498,0,-2,-4,-4
+"10","8708030103","Scalloped Hammerhead",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Sphyrnidae","Elasmobranchii","8708030103",4.18666666666667,0,-2,-6,-16
+"11","8708040201","Smooth Dogfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Triakidae","Elasmobranchii","8708040201",3.62857142857143,0,-1,-5,-2
+"12","8713010101","Smalltooth Sawfish",17,1,NA,1,NA,NA,NA,NA,NA,NA,"Pristidae","Elasmobranchii","8713010101",NA,0,-2,-3,-7
+"13","8713020101","Atlantic Guitarfish",61,1,NA,5,1,25,NA,NA,1,NA,"Rhinobatidae","Elasmobranchii","8713020101",NA,0,-1,-1,-2
+"14","8713040113","Clearnose Skate",5,1,NA,NA,NA,51,NA,NA,NA,NA,"Rajidae","Elasmobranchii","8713040113",3.89714285714286,0,-1,-3,-2
+"15","8713040126","Freckled Skate",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Rajidae","Elasmobranchii","8713040126",NA,0,-1,-1,-1
+"16","8713040133","Roundel Skate",1,NA,NA,NA,NA,24,NA,NA,NA,NA,"Rajidae","Elasmobranchii","8713040133",NA,0,-1,-1,-2
+"17","8713050103","Southern Stingray",714,11,NA,21,13,103,2,NA,NA,NA,"Dasyatidae","Elasmobranchii","8713050103",3.525,0,-1,-2,-2
+"18","8713050105","Atlantic Stingray",47545,2209,NA,181,117,11133,159,1,81,NA,"Dasyatidae","Elasmobranchii","8713050105",NA,0,-2,-3,-4
+"19","8713050106","Bluntnose Stingray",4182,121,NA,74,35,629,15,NA,3,NA,"Dasyatidae","Elasmobranchii","8713050106",3.6075,0,-1,-3,-1
+"20","8713050202","Smooth Butterfly Ray",1353,29,NA,9,2,568,1,NA,NA,NA,"Gymnuridae","Elasmobranchii","8713050202",NA,0,-1,-2,-3
+"21","8713070101","Spotted Eagle Ray",108,2,NA,4,NA,2,NA,NA,NA,NA,"Myliobatidae","Elasmobranchii","8713070101",4.12,0,-2,-4,-14
+"22","8713070301","Cownose Ray",10087,275,1,303,43,98,47,NA,8,NA,"Myliobatidae","Elasmobranchii","8713070301",3.70666666666667,0,-1,-3,-3
+"23","8713120101","Lesser Electric Ray",9,NA,NA,NA,NA,18,NA,NA,NA,NA,"Narcinidae","Elasmobranchii","8713120101",NA,0,-1,-1,-1
+"24","8729010105","Atlantic Sturgeon",2,NA,NA,NA,NA,27,NA,NA,NA,NA,"Acipenseridae","Actinopterygii","8729010105",NA,0,-8,-13,-10
+"25","8732010101","Longnose Gar",769,63,NA,1,NA,228,40,NA,NA,NA,"Lepisosteidae","Actinopterygii","8732010101",NA,0,-2,-5,-3
+"26","8732010102","Spotted Gar",10,11,NA,NA,NA,1,NA,NA,NA,NA,"Lepisosteidae","Actinopterygii","8732010102",NA,0,-1,-4,-2
+"27","8732010105","Florida Gar",19,57,NA,NA,NA,7,24,NA,NA,NA,"Lepisosteidae","Actinopterygii","8732010105",NA,0,-1,-1,-1
+"28","8734010101","Bowfin",1,3,NA,NA,NA,NA,1,NA,NA,NA,"Amiidae","Actinopterygii","8734010101",NA,0,-2,-7,-2
+"29","8738010101","Ladyfish",55135,754,5,2638,NA,298,177,1,322,NA,"Elopidae","Actinopterygii","8738010101",3.4825,0,-1,-3,-3
+"30","8738010199","Malacho",NA,2,NA,NA,NA,11,NA,NA,NA,NA,"Elopidae","Actinopterygii","8738010199",NA,0,0,0,0
+"31","8738020201","Tarpon",51,2,NA,NA,NA,1,NA,NA,NA,NA,"Megalopidae","Actinopterygii","8738020201",3.885,0,-2,-6,-5
+"32","8739010101","Bonefish",28,48,NA,NA,NA,1,NA,NA,NA,NA,"Albulidae","Actinopterygii","8739010101",3.735,0,-2,-7,-9
+"33","8739010104","Channel Bonefish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Albulidae","Actinopterygii","8739010104",NA,0,0,0,0
+"34","8741010101","American Eel",2,NA,NA,NA,NA,4,NA,NA,NA,NA,"Anguillidae","Actinopterygii","8741010101",3.83,-1,-3,-12,-6
+"35","8741050404","Blackedge Moray",NA,NA,NA,NA,NA,3,NA,NA,NA,NA,"Muraenidae","Actinopterygii","8741050404",NA,0,-1,-1,-2
+"36","8741050407","Ocellated Moray",1,NA,NA,NA,NA,16,NA,NA,NA,NA,"Muraenidae","Actinopterygii","8741050407",NA,0,-1,-2,-2
+"37","8741130201","Whip Eel",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Ophichthidae","Actinopterygii","8741130201",NA,0,-1,-2,-2
+"38","8741130802","Speckled Worm Eel",1,150,NA,NA,NA,809,NA,NA,NA,NA,"Ophichthidae","Actinopterygii","8741130802",NA,0,-1,-2,-2
+"39","8741131001","Shrimp Eel",4,7,NA,NA,NA,22,NA,NA,NA,NA,"Ophichthidae","Actinopterygii","8741131001",NA,0,-1,-2,-2
+"40","8741133101","Spotted Spoon-nose Eel",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ophichthidae","Actinopterygii","8741133101",NA,0,-1,-2,-2
+"41","8741133102","Stippled Spoon-nose Eel",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Ophichthidae","Actinopterygii","8741133102",NA,0,-1,-1,-2
+"42","8747010104","Alabama Shad",76,5,NA,NA,NA,2,NA,NA,NA,NA,"Clupeidae","Actinopterygii","8747010104",NA,0,-2,-5,-7
+"43","8747010106","Skipjack Herring",83,9,NA,NA,NA,5,NA,NA,NA,NA,"Clupeidae","Actinopterygii","8747010106",NA,0,-2,-5,-4
+"44","8747010501","Gizzard Shad",1041,9,NA,NA,NA,3,5,NA,NA,NA,"Clupeidae","Actinopterygii","8747010501",NA,0,-3,-8,-5
+"45","8747010502","Threadfin Shad",1894,1476,NA,NA,NA,114,210,NA,NA,NA,"Clupeidae","Actinopterygii","8747010502",2.616,0,-3,-7,-7
+"46","8747010701","Atlantic Thread Herring",27592,24998,NA,41,NA,1115,378,4,NA,NA,"Clupeidae","Actinopterygii","8747010701",3.192,0,-1,-3,-2
+"47","8747010803","Scaled Sardine",183660,213642,NA,NA,NA,5329,14331,NA,NA,NA,"Clupeidae","Actinopterygii","8747010803",3.486,0,-1,-1,-2
+"48","8747010901","Dwarf Herring",NA,2051,NA,NA,NA,NA,NA,NA,NA,NA,"Clupeidae","Actinopterygii","8747010901",3.22,0,-1,-1,-2
+"49","8747010903","Shortband Herring",NA,566,NA,NA,NA,NA,NA,NA,NA,NA,"Clupeidae","Actinopterygii","8747010903",NA,0,-1,-1,-2
+"50","8747011001","Spanish Sardine",1500,17602,NA,NA,NA,109,5,NA,NA,NA,"Clupeidae","Actinopterygii","8747011001",3.2,0,-2,-6,-7
+"51","8747020103","Silver Anchovy",NA,2,NA,NA,NA,2,NA,NA,NA,NA,"Engraulidae","Actinopterygii","8747020103",NA,0,-1,-2,-2
+"52","8747020201","Striped Anchovy",127,93416,NA,1,NA,32662,32,1,NA,NA,"Engraulidae","Actinopterygii","8747020201",3.40333333333333,0,-1,-4,-2
+"53","8747020202","Bay Anchovy",57,1954790,NA,NA,NA,766947,75,14098,NA,NA,"Engraulidae","Actinopterygii","8747020202",3.0925,0,-1,-3,-2
+"54","8747020203","Cuban Anchovy",NA,8291,NA,NA,NA,24775,NA,NA,NA,NA,"Engraulidae","Actinopterygii","8747020203",NA,0,-1,-1,-2
+"55","8747020204","Bigeye Anchovy",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,"Engraulidae","Actinopterygii","8747020204",NA,0,-1,-1,-2
+"56","8747020205","Dusky Anchovy",NA,2422,NA,NA,NA,3468,NA,NA,NA,NA,"Engraulidae","Actinopterygii","8747020205",NA,0,-1,-1,-2
+"57","8758010103","Chain Pickerel",NA,3,NA,NA,NA,NA,NA,NA,NA,NA,"Esocidae","Actinopterygii","8758010103",NA,0,-1,-5,-2
+"58","8762020101","Inshore Lizardfish",4813,12306,NA,13,1,15560,8,1,39,NA,"Synodontidae","Actinopterygii","8762020101",4.11142857142857,0,-1,-2,-2
+"59","8762020301","Largescale Lizardfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Synodontidae","Actinopterygii","8762020301",NA,0,-1,-1,-3
+"60","8776010101","Common Carp",2,12,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776010101",2.62916666666667,0,-7,-25,-34
+"61","8776010601","Golden Shiner",NA,418,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776010601",2.83857142857143,0,-1,-5,-3
+"62","8776011104","Ironcolor Shiner",NA,16,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776011104",NA,0,-1,-5,-4
+"63","8776011124","Weed Shiner",NA,36,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776011124",NA,0,-1,-3,-2
+"64","8776011178","Taillight Shiner",NA,26,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776011178",NA,0,-1,-2,-2
+"65","8776011185","Coastal Shiner",1,2170,NA,NA,NA,16,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776011185",NA,0,-1,-3,-2
+"66","8776012301","Grass Carp",1,1,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776012301",2,0,-2,-13,-18
+"67","8776017621","Blacktail Shiner",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Cyprinidae","Actinopterygii","8776017621",NA,0,-1,-3,-3
+"68","8776040201","Quillback",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Catostomidae","Actinopterygii","8776040201",NA,0,-3,-4,-2
+"69","8776040301","Lake Chubsucker",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,"Catostomidae","Actinopterygii","8776040301",NA,0,-1,-4,-2
+"70","8776040801","Spotted Sucker",NA,5,NA,NA,NA,NA,NA,NA,NA,NA,"Catostomidae","Actinopterygii","8776040801",NA,0,-1,-6,-2
+"71","8777020102","Blue Catfish",NA,NA,NA,NA,NA,65,NA,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020102",NA,0,-1,-5,-4
+"72","8777020105","Channel Catfish",1,14,NA,NA,NA,1303,1,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020105",3.75666666666667,0,-3,-9,-6
+"73","8777020602","White Catfish",11,21,NA,NA,NA,1539,1,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020602",3.65,0,-1,-4,-2
+"74","8777020604","Yellow Bullhead",NA,1,NA,NA,NA,4,NA,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020604",NA,0,-2,-7,-4
+"75","8777020605","Brown Bullhead",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020605",3.40875,0,-6,-12,-7
+"76","8777020607","Spotted Bullhead",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Ictaluridae","Actinopterygii","8777020607",NA,0,-1,-2,-3
+"77","8777120101","Walking Catfish",1,NA,NA,NA,NA,1,NA,NA,NA,NA,"Clariidae","Actinopterygii","8777120101",3.2925,0,-1,-2,-3
+"78","8777180101","Gafftopsail Catfish",8558,1338,NA,102,1,3874,49,NA,42,NA,"Ariidae","Actinopterygii","8777180101",3.395,0,-1,-2,-1
+"79","8777180202","Hardhead Catfish",52377,18787,50,6471,2,41238,181,NA,449,NA,"Ariidae","Actinopterygii","8777180202",3.335,0,-1,-2,-2
+"80","8777300301","Brown Hoplo",4,8,NA,NA,NA,14,NA,NA,NA,NA,"Callichthyidae","Actinopterygii","8777300301",2.944,0,0,-1,-2
+"81","8777302001","Vermiculated Catfish",NA,2,NA,NA,NA,2,1,NA,NA,NA,"Loricariidae","Actinopterygii","8777302001",NA,0,0,-2,-2
+"82","8781010101","Pirate Perch",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,"Aphredoderidae","Actinopterygii","8781010101",NA,0,-1,-6,-2
+"83","8783010108","Atlantic Midshipman",3,5,NA,NA,NA,624,NA,NA,NA,NA,"Batrachoididae","Actinopterygii","8783010108",4.47,0,-1,-2,-1
+"84","8783010202","Gulf Toadfish",4811,1083,NA,3,NA,11639,26,NA,1,NA,"Batrachoididae","Actinopterygii","8783010202",NA,0,-1,-1,-2
+"85","8784010102","Skilletfish",2,497,NA,NA,NA,274,NA,5,NA,NA,"Gobiesocidae","Actinopterygii","8784010102",NA,0,-2,-3,-3
+"86","8787020101","Sargassumfish",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Antennariidae","Actinopterygii","8787020101",NA,0,-3,-7,-14
+"87","8787020203","Singlespot Frogfish",NA,NA,NA,NA,NA,8,NA,NA,NA,NA,"Antennariidae","Actinopterygii","8787020203",NA,0,-1,-2,-2
+"88","8787040105","Roughback Batfish",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Ogcocephalidae","Actinopterygii","8787040105",NA,0,-1,-2,-2
+"89","8787040106","Spotted Batfish",3348,100,NA,1,NA,747,NA,NA,NA,NA,"Ogcocephalidae","Actinopterygii","8787040106",NA,0,-1,-1,-1
+"90","8787040109","Longnose Batfish",2,NA,NA,NA,NA,2,NA,NA,NA,NA,"Ogcocephalidae","Actinopterygii","8787040109",NA,0,-1,-2,-1
+"91","8787040113","Polka-dot Batfish",5650,166,NA,1,NA,2899,NA,NA,NA,NA,"Ogcocephalidae","Actinopterygii","8787040113",NA,0,-1,-1,-2
+"92","8791031002","Spotted Hake",NA,7,NA,NA,NA,118,NA,NA,NA,NA,"Phycidae","Actinopterygii","8791031002",3.76666666666667,0,-1,-4,-2
+"93","8791031007","Southern Hake",30,302,NA,NA,NA,2328,NA,NA,NA,NA,"Phycidae","Actinopterygii","8791031007",NA,0,-1,-1,-2
+"94","8792010401","Bearded Brotula",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Ophidiidae","Actinopterygii","8792010401",NA,0,-1,-1,-3
+"95","8792010603","Bank Cusk-eel",4,NA,NA,NA,NA,133,NA,NA,NA,NA,"Ophidiidae","Actinopterygii","8792010603",NA,0,-1,-1,-2
+"96","8792010605","Crested Cusk-eel",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Ophidiidae","Actinopterygii","8792010605",NA,0,-1,-1,-2
+"97","8792010703","Sleeper Cusk-eel",9,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ophidiidae","Actinopterygii","8792010703",NA,0,-1,-1,-2
+"98","8792012301","Gold Brotula",NA,NA,NA,NA,NA,15,NA,NA,NA,NA,"Bythitidae","Actinopterygii","8792012301",NA,0,-1,-1,-2
+"99","8792012401","Key Brotula",NA,5,NA,NA,NA,9,NA,NA,NA,NA,"Bythitidae","Actinopterygii","8792012401",NA,0,-1,-1,-2
+"100","8803010201","Ballyhoo",134,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Hemiramphidae","Actinopterygii","8803010201",2.24,0,-1,-2,-3
+"101","8803010202","Balao",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Hemiramphidae","Actinopterygii","8803010202",3.85,0,-1,-2,-3
+"102","8803010301","Halfbeak",31,28,NA,1,NA,1,NA,NA,NA,NA,"Hemiramphidae","Actinopterygii","8803010301",2,0,-2,-5,-4
+"103","8803010399","False Silver Halfbeak",2558,1446,NA,NA,NA,2,NA,NA,NA,NA,"Hemiramphidae","Actinopterygii","8803010399",NA,0,-1,-3,-1
+"104","8803010401","Hardhead Halfbeak",53,298,NA,NA,NA,NA,NA,NA,NA,NA,"Hemiramphidae","Actinopterygii","8803010401",NA,0,-2,-3,-4
+"105","8803020201","Atlantic Needlefish",6686,1583,NA,11,NA,2,46,1,4,NA,"Belonidae","Actinopterygii","8803020201",3,0,-1,-4,-3
+"106","8803020203","Timucu",300,1336,NA,1,NA,1,35,3,NA,NA,"Belonidae","Actinopterygii","8803020203",4.355,0,-1,-2,-3
+"107","8803020302","Houndfish",411,10,NA,NA,NA,NA,NA,NA,NA,NA,"Belonidae","Actinopterygii","8803020302",4.445,0,-2,-4,-13
+"108","8804040201","Marsh Killifish",NA,1217,NA,NA,NA,1,NA,22,NA,NA,"Fundulidae","Actinopterygii","8804040201",NA,0,-2,-3,-3
+"109","8804040205","Striped Killifish",NA,10,NA,NA,NA,NA,NA,NA,NA,NA,"Fundulidae","Actinopterygii","8804040205",NA,0,-1,-3,-2
+"110","8804040207","Gulf Killifish",1405,20044,NA,NA,NA,3,1079,579,NA,NA,"Fundulidae","Actinopterygii","8804040207",3.27,0,-1,-1,-2
+"111","8804040208","Golden Topminnow",NA,34,NA,NA,NA,NA,NA,NA,NA,NA,"Fundulidae","Actinopterygii","8804040208",NA,0,-1,-2,-2
+"112","8804040213","Longnose Killifish",3635,44947,NA,NA,NA,211,763,438,NA,NA,"Fundulidae","Actinopterygii","8804040213",3.19,0,-1,-1,-2
+"113","8804040223","Seminole Killifish",1,5091,NA,NA,NA,73,16,1,NA,NA,"Fundulidae","Actinopterygii","8804040223",NA,0,-1,-1,-1
+"114","8804040301","Rainwater Killifish",1,489780,NA,NA,NA,9422,12,2803,NA,NA,"Fundulidae","Actinopterygii","8804040301",NA,0,-2,-3,-3
+"115","8804040302","Bluefin Killifish",NA,280,NA,NA,NA,NA,NA,NA,NA,NA,"Fundulidae","Actinopterygii","8804040302",NA,0,-1,-1,-1
+"116","8804040401","Diamond Killifish",1,4388,NA,NA,NA,1,2,98,NA,NA,"Fundulidae","Actinopterygii","8804040401",NA,0,-2,-2,-3
+"117","8804040501","Goldspotted Killifish",142,138580,NA,NA,NA,7224,479,874,NA,NA,"Cyprinodontidae","Actinopterygii","8804040501",3.51,0,-1,-1,-2
+"118","8804040801","Flagfish",NA,28,NA,NA,NA,1,NA,NA,NA,NA,"Cyprinodontidae","Actinopterygii","8804040801",NA,0,-1,-1,-1
+"119","8804080101","Western Mosquitofish",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Poeciliidae","Actinopterygii","8804080101",3.22333333333333,0,-1,-8,-11
+"120","8804080116","Eastern Mosquito Fish",NA,26506,NA,NA,NA,7,NA,97,NA,NA,"Poeciliidae","Actinopterygii","8804080116",3.1,0,-2,-5,-6
+"121","8804080201","Sailfin Molly",19,12609,NA,NA,NA,2,347,490,NA,NA,"Poeciliidae","Actinopterygii","8804080201",NA,0,-1,-2,-4
+"122","8804080301","Pike Killifish",NA,20,NA,NA,NA,NA,1,1,NA,NA,"Poeciliidae","Actinopterygii","8804080301",NA,0,-2,-3,-3
+"123","8804080401","Least Killifish",NA,145,NA,NA,NA,NA,NA,NA,NA,NA,"Poeciliidae","Actinopterygii","8804080401",NA,0,-1,-1,-1
+"124","8805020201","Rough Silverside",3,87693,NA,NA,NA,2,NA,1,NA,NA,"Atherinopsidae","Actinopterygii","8805020201",3.055,0,-1,-2,-2
+"125","8805020301","Inland Silverside",NA,314,NA,NA,NA,NA,NA,NA,NA,NA,"Atherinopsidae","Actinopterygii","8805020301",3.12,0,-2,-5,-6
+"126","8805020304","Tidewater Silverside",NA,381,NA,NA,NA,NA,NA,NA,NA,NA,"Atherinopsidae","Actinopterygii","8805020304",NA,0,-1,-1,-2
+"127","8805020501","Hardhead Silverside",NA,19258,NA,NA,NA,NA,NA,NA,NA,NA,"Atherinidae","Actinopterygii","8805020501",3.31,0,-3,-4,-5
+"128","8805020801","Brook Silverside",NA,732,NA,NA,NA,NA,NA,NA,NA,NA,"Atherinopsidae","Actinopterygii","8805020801",3.05,0,-2,-4,-2
+"129","8805021201","Reef Silverside",NA,142,NA,NA,NA,NA,NA,NA,NA,NA,"Atherinidae","Actinopterygii","8805021201",NA,0,-2,-2,-3
+"130","8819020101","Bluespotted Cornetfish",2,4,NA,NA,NA,5,NA,NA,NA,NA,"Fistulariidae","Actinopterygii","8819020101",3.98,0,-1,-4,-3
+"131","8820020102","Dusky Pipefish",16,5815,NA,NA,NA,27285,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020102",3.47,0,-1,-1,-2
+"132","8820020103","Northern Pipefish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020103",3.22,0,-2,-4,-2
+"133","8820020104","Chain Pipefish",7,4640,NA,NA,NA,5802,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020104",NA,0,-1,-1,-2
+"134","8820020108","Sargassum Pipefish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020108",NA,0,-2,-4,-4
+"135","8820020109","Bull Pipefish",NA,1,NA,NA,NA,20,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020109",NA,0,-1,-2,-2
+"136","8820020113","Gulf Pipefish",16,39031,NA,NA,NA,12974,7,5,NA,NA,"Syngnathidae","Actinopterygii","8820020113",3.34,0,-1,-1,-2
+"137","8820020201","Lined Seahorse",134,317,NA,NA,NA,2144,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020201",NA,0,-1,-4,-2
+"138","8820020205","Dwarf Seahorse",1,2623,NA,NA,NA,823,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020205",NA,0,-1,-1,-2
+"139","8820020601","Opposum Pipefish",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820020601",NA,0,-2,-3,-6
+"140","8820022301","Whitenose Pipefish",NA,NA,NA,NA,NA,23,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820022301",NA,0,-1,-1,-2
+"141","8820022305","Shortfin Pipefish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820022305",NA,0,-1,-1,-2
+"142","8820023901","Fringed Pipefish",2,107,NA,NA,NA,1726,NA,NA,NA,NA,"Syngnathidae","Actinopterygii","8820023901",NA,0,-1,-2,-2
+"143","8826010605","Barbfish",225,21,NA,NA,NA,1537,NA,NA,NA,NA,"Scorpaenidae","Actinopterygii","8826010605",3.76,0,-1,-1,-2
+"144","8826010606","Smoothhead Scorpionfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Scorpaenidae","Actinopterygii","8826010606",NA,0,-1,-1,-2
+"145","8826010614","Spotted Scorpionfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Scorpaenidae","Actinopterygii","8826010614",3.545,0,-1,-2,-2
+"146","8826020103","Leopard Searobin",865,2552,NA,3,NA,49582,17,NA,NA,NA,"Triglidae","Actinopterygii","8826020103",3.39,0,-1,-1,-2
+"147","8826020104","Bighead Searobin",1664,1884,NA,3,NA,9278,10,1,NA,NA,"Triglidae","Actinopterygii","8826020104",NA,0,-1,-1,-2
+"148","8826020105","Spiny Searobin",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Triglidae","Actinopterygii","8826020105",3.5,0,-1,-1,-2
+"149","8826020111","Barred Searobin",NA,1,NA,NA,NA,627,NA,NA,NA,NA,"Triglidae","Actinopterygii","8826020111",NA,0,-1,-1,-2
+"150","8826020118","Blackfin Searobin",NA,NA,NA,NA,NA,136,NA,NA,NA,NA,"Triglidae","Actinopterygii","8826020118",NA,0,-1,-1,-2
+"151","8826020123","Bigeye Searobin",1,3,NA,NA,NA,162,NA,NA,NA,NA,"Triglidae","Actinopterygii","8826020123",NA,0,-1,-1,-1
+"152","8832010101","Flying Gurnard",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Dactylopteridae","Actinopterygii","8832010101",3.65,0,-1,-5,-4
+"153","8835010105","Common Snook",39464,2516,11,1033,235,34,270,49,324,NA,"Centropomidae","Actinopterygii","8835010105",4.16666666666667,0,-2,-3,-4
+"154","8835020301","Black Sea Bass",2188,844,NA,1,NA,24700,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020301",3.77166666666667,0,-1,-3,-2
+"155","8835020304","Bank Sea Bass",2,NA,NA,NA,NA,3,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020304",NA,0,-1,-2,-2
+"156","8835020305","Rock Sea Bass",1,1,NA,NA,NA,197,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020305",NA,0,-1,-2,-2
+"157","8835020401","Goliath Grouper",78,20,NA,NA,NA,17,NA,NA,11,NA,"Serranidae","Actinopterygii","8835020401",3.93,0,-2,-2,-4
+"158","8835020408","Red Grouper",74,3,NA,NA,NA,168,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020408",3.57,0,-1,-1,-2
+"159","8835020501","Gag",4671,217,NA,32,4,1419,NA,NA,11,NA,"Serranidae","Actinopterygii","8835020501",3.65,0,-1,-2,-2
+"160","8835020502","Black Grouper",2,NA,NA,NA,NA,3,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020502",4.365,0,-1,-2,-2
+"161","8835020505","Scamp",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835020505",4.47,0,-1,-2,-2
+"162","8835021002","Sand Perch",102,78,NA,NA,NA,2660,NA,NA,3,NA,"Serranidae","Actinopterygii","8835021002",4.045,0,-1,-2,-2
+"163","8835021005","Dwarf Sand Perch",8,134,NA,NA,NA,252,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835021005",NA,0,-1,-1,-2
+"164","8835022201","Pygmy Sea Bass",1,96,NA,NA,NA,596,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835022201",NA,0,-1,-1,-2
+"165","8835022309","Belted Sandfish",5,86,NA,NA,NA,778,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835022309",NA,0,-1,-1,-2
+"166","8835030204","Whitespotted Soapfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Serranidae","Actinopterygii","8835030204",NA,0,-1,-1,-2
+"167","8835160203","Shadow Bass",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160203",NA,0,-1,-2,-3
+"168","8835160402","Bluespotted Sunfish",NA,29,NA,NA,NA,1,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160402",NA,0,-1,-2,-1
+"169","8835160501","Redbreast Sunfish",NA,120,NA,NA,NA,3,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160501",3.23,0,-1,-4,-2
+"170","8835160504","Bluegill",1,1352,NA,NA,NA,65,22,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160504",3.39857142857143,0,-2,-8,-10
+"171","8835160507","Dollar Sunfish",NA,31,NA,NA,NA,NA,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160507",NA,0,-1,-1,-1
+"172","8835160509","Redear Sunfish",17,372,NA,NA,NA,8,5,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160509",NA,0,-1,-5,-4
+"173","8835160510","Spotted Sunfish",1,527,NA,NA,NA,7,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160510",NA,0,-1,-2,-2
+"174","8835160602","Largemouth Bass",45,943,NA,NA,NA,6,1,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160602",3.80733333333333,0,-3,-9,-12
+"175","8835160702","Black Crappie",6,14,NA,NA,NA,21,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835160702",3.76666666666667,0,-3,-6,-4
+"176","8835161001","Warmouth",NA,13,NA,NA,NA,1,NA,NA,NA,NA,"Centrarchidae","Actinopterygii","8835161001",NA,0,-1,-7,-4
+"177","8835170101","Bigeye",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Priacanthidae","Actinopterygii","8835170101",3.78666666666667,0,-1,-2,-4
+"178","8835180201","Bronze Cardinalfish",NA,1,NA,NA,NA,6,NA,NA,NA,NA,"Apogonidae","Actinopterygii","8835180201",NA,0,-1,-1,-2
+"179","8835180503","Dusky Cardinalfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Apogonidae","Actinopterygii","8835180503",NA,0,-1,-1,-2
+"180","8835200101","Swamp Darter",NA,26,NA,NA,NA,NA,NA,NA,NA,NA,"Percidae","Actinopterygii","8835200101",NA,0,-1,-2,-1
+"181","8835200319","Blackbanded Darter",NA,3,NA,NA,NA,NA,NA,NA,NA,NA,"Percidae","Actinopterygii","8835200319",NA,0,-1,-2,-2
+"182","8835250101","Bluefish",1800,60,NA,12,5,8,NA,NA,9,NA,"Pomatomidae","Actinopterygii","8835250101",4.45294117647059,0,-2,-9,-12
+"183","8835260101","Cobia",97,6,NA,1,NA,16,NA,NA,3,NA,"Rachycentridae","Actinopterygii","8835260101",4.28,0,-2,-6,-15
+"184","8835270201","Sharksucker",130,3,NA,NA,NA,8,1,NA,NA,NA,"Echeneidae","Actinopterygii","8835270201",3.745,0,-2,-8,-16
+"185","8835270202","Whitefin Sharksucker",395,21,NA,3,NA,70,NA,NA,NA,NA,"Echeneidae","Actinopterygii","8835270202",NA,0,-1,-2,-2
+"186","8835280303","Crevalle Jack",6508,179,NA,749,243,40,5,NA,199,NA,"Carangidae","Actinopterygii","8835280303",3.70666666666667,0,-1,-5,-4
+"187","8835280304","Horse-eye Jack",278,16,NA,3,NA,NA,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280304",3.845,0,-1,-2,-2
+"188","8835280306","Blue Runner",460,6,NA,1,NA,14,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280306",4.15,0,-1,-4,-5
+"189","8835280308","Bar Jack",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280308",4.26857142857143,0,-1,-2,-2
+"190","8835280401","Atlantic Bumper",2409,3660,NA,17,NA,12511,3,NA,NA,NA,"Carangidae","Actinopterygii","8835280401",3.855,0,-1,-2,-3
+"191","8835280501","Leatherjacket",4122,12886,NA,29,NA,55,111,51,3,NA,"Carangidae","Actinopterygii","8835280501",3.61333333333333,0,-2,-5,-2
+"192","8835280701","Lookdown",2083,91,NA,5,NA,246,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280701",4.29,0,-1,-3,-2
+"193","8835280705","Atlantic Moonfish",18,NA,NA,NA,NA,86,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280705",NA,0,-1,-5,-2
+"194","8835280901","Florida Pompano",1342,239,NA,67,NA,5,NA,NA,3,NA,"Carangidae","Actinopterygii","8835280901",3.5,0,-1,-2,-2
+"195","8835280902","Permit",5241,1621,NA,73,187,10,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835280902",3.884,0,-1,-2,-2
+"196","8835281202","Round Scad",26,NA,NA,NA,NA,9,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835281202",3.518,0,-2,-4,-5
+"197","8835281401","Bluntnose Jack",45,36,NA,NA,NA,435,NA,NA,NA,NA,"Carangidae","Actinopterygii","8835281401",3.87,0,-1,-1,-2
+"198","8835360102","Gray Snapper",18127,7479,NA,280,NA,5248,42,7,485,NA,"Lutjanidae","Actinopterygii","8835360102",4.02125,0,-1,-2,-2
+"199","8835360103","Mutton Snapper",55,12,NA,NA,NA,11,NA,NA,NA,NA,"Lutjanidae","Actinopterygii","8835360103",3.932,0,-1,-2,-2
+"200","8835360104","Schoolmaster",4,1,NA,NA,NA,NA,NA,NA,NA,NA,"Lutjanidae","Actinopterygii","8835360104",3.80909090909091,0,-1,-2,-2
+"201","8835360107","Red Snapper",NA,NA,NA,NA,NA,43,NA,NA,NA,NA,"Lutjanidae","Actinopterygii","8835360107",NA,0,-1,-2,-2
+"202","8835360112","Lane Snapper",3890,4194,NA,NA,NA,15659,2,NA,NA,NA,"Lutjanidae","Actinopterygii","8835360112",3.81571428571429,0,-1,-1,-2
+"203","8835360401","Yellowtail Snapper",71,9,NA,NA,NA,75,NA,NA,NA,NA,"Lutjanidae","Actinopterygii","8835360401",3.8725,0,-1,-2,-2
+"204","8835380101","Tripletail",36,1,NA,NA,NA,6,NA,NA,NA,NA,"Lobotidae","Actinopterygii","8835380101",4.04,0,-2,-7,-12
+"205","8835390101","Spotfin Mojarra",47,193,NA,NA,NA,498,NA,NA,NA,NA,"Gerreidae","Actinopterygii","8835390101",3.24,0,-3,-6,-5
+"206","8835390102","Silver Jenny",112261,164562,NA,25,NA,80550,3021,11,NA,NA,"Gerreidae","Actinopterygii","8835390102",2.90166666666667,0,-2,-5,-4
+"207","8835390109","Slender Mojarra",10,225,NA,NA,NA,12,NA,NA,NA,NA,"Gerreidae","Actinopterygii","8835390109",NA,0,-1,-1,-2
+"208","8835390111","Tidewater Mojarra",48545,108745,NA,24,NA,9371,10644,462,NA,NA,"Gerreidae","Actinopterygii","8835390111",NA,0,-1,-1,-1
+"209","8835390203","Striped Mojarra",4461,12491,NA,318,NA,4368,1265,40,5,NA,"Gerreidae","Actinopterygii","8835390203",2.425,0,-1,-1,-1
+"210","8835390204","Irish Pompano",1853,714,NA,6,NA,94,1,564,NA,NA,"Gerreidae","Actinopterygii","8835390204",2.44,0,-1,-1,-2
+"211","8835390301","Yellowfin Mojarra",654,16,NA,NA,NA,1,NA,NA,NA,NA,"Gerreidae","Actinopterygii","8835390301",3.60333333333333,0,-1,-1,-2
+"212","8835400101","Tomtate",82,72,NA,NA,NA,246,NA,NA,NA,NA,"Haemulidae","Actinopterygii","8835400101",3.55333333333333,0,-1,-2,-2
+"213","8835400102","White Grunt",2575,1824,NA,NA,NA,6336,NA,NA,1,NA,"Haemulidae","Actinopterygii","8835400102",3.6275,0,-1,-1,-2
+"214","8835400113","Bluestriped Grunt",256,6,NA,NA,NA,8,NA,NA,NA,NA,"Haemulidae","Actinopterygii","8835400113",3.48,0,-1,-1,-2
+"215","8835400117","Sailors Choice",199,NA,NA,NA,NA,4,NA,NA,NA,NA,"Haemulidae","Actinopterygii","8835400117",3.44666666666667,0,-1,-1,-2
+"216","8835400201","Pigfish",120805,97797,NA,193,NA,221220,18,1,9,NA,"Haemulidae","Actinopterygii","8835400201",3.1,0,-1,-2,-2
+"217","8835400306","Porkfish",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Haemulidae","Actinopterygii","8835400306",3.635,0,-1,-1,-2
+"218","8835430101","Scup",NA,NA,NA,NA,NA,9,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430101",3.886,0,-1,-4,-2
+"219","8835430102","Longspine Porgy",NA,NA,NA,NA,NA,99,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430102",3.55285714285714,0,-1,-1,-2
+"220","8835430201","Pinfish",1609740,1206207,NA,5523,3,881937,2949,115,250,NA,"Sparidae","Actinopterygii","8835430201",2.9284,0,-1,-2,-2
+"221","8835430301","Sheepshead",30538,6516,3,2196,740,3543,210,19,226,NA,"Sparidae","Actinopterygii","8835430301",NA,0,-1,-3,-1
+"222","8835430302","Sea Bream",71,NA,NA,NA,NA,2,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430302",2.825,0,-1,-2,-2
+"223","8835430401","Spottail Pinfish",9454,1635,NA,1,NA,20984,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430401",2.78,0,-1,-2,-2
+"224","8835430501","Grass Porgy",2515,270,NA,1,NA,5980,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430501",NA,0,-1,-1,-2
+"225","8835430502","Jolthead Porgy",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430502",3.5,0,-1,-2,-2
+"226","8835430505","Whitebone Porgy",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430505",4.035,0,-1,-1,-2
+"227","8835430506","Knobbed Porgy",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430506",NA,0,-1,-1,-2
+"228","8835430508","Littlehead Porgy",2,NA,NA,NA,NA,13,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430508",NA,0,-1,-1,-2
+"229","8835430510","Sheepshead Porgy",178,48,NA,NA,NA,52,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430510",4.01,0,-1,-1,-2
+"230","8835430601","Red Porgy",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Sparidae","Actinopterygii","8835430601",3.92,0,-1,-4,-5
+"231","8835440102","Spotted Seatrout",13654,28043,1,959,18,6902,127,48,574,NA,"Sciaenidae","Actinopterygii","8835440102",3.71,0,-1,-2,-1
+"232","8835440103","Silver Seatrout",NA,8,NA,NA,NA,69,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835440103",4.27285714285714,0,-1,-2,-2
+"233","8835440106","Sand Seatrout",1428,17116,NA,7,NA,122788,99,NA,17,NA,"Sciaenidae","Actinopterygii","8835440106",3.98333333333333,0,-1,-1,-2
+"234","8835440301","Silver Perch",208054,155696,NA,49,NA,99776,1163,4,1,NA,"Sciaenidae","Actinopterygii","8835440301",3.7075,0,-1,-2,-2
+"235","8835440304","Blue Croaker",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835440304",NA,0,-1,-1,-2
+"236","8835440401","Spot",118892,472488,NA,373,NA,122561,4632,151,NA,NA,"Sciaenidae","Actinopterygii","8835440401",3.28444444444444,0,-1,-3,-2
+"237","8835440501","Banded Drum",NA,NA,NA,NA,NA,26,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835440501",3.35857142857143,0,-1,-2,-1
+"238","8835440601","Southern Kingfish",3583,17043,NA,3,NA,41429,67,NA,9,NA,"Sciaenidae","Actinopterygii","8835440601",3.63285714285714,0,-1,-3,-1
+"239","8835440602","Gulf Kingfish",349,240,NA,24,NA,53,NA,NA,2,NA,"Sciaenidae","Actinopterygii","8835440602",3.92,0,-1,-1,-2
+"240","8835440603","Northern Kingfish",315,1558,NA,NA,NA,312,9,NA,NA,NA,"Sciaenidae","Actinopterygii","8835440603",3.659,0,-1,-3,-2
+"241","8835440701","Atlantic Croaker",26823,7352,NA,1,NA,84915,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835440701",3.294375,0,-1,-2,-1
+"242","8835440801","Black Drum",7201,459,NA,122,95,217,13,NA,26,NA,"Sciaenidae","Actinopterygii","8835440801",NA,0,-1,-5,-2
+"243","8835440901","Red Drum",18792,26841,4,1206,5828,1037,1925,131,1224,821,"Sciaenidae","Actinopterygii","8835440901",3.47769230769231,0,-2,-3,-4
+"244","8835441001","Star Drum",15,17,NA,NA,NA,3035,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835441001",NA,0,-1,-1,-2
+"245","8835441202","Jackknife-fish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835441202",3.41,0,-1,-1,-2
+"246","8835441402","Cubbyu",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Sciaenidae","Actinopterygii","8835441402",NA,0,-1,-1,-2
+"247","8835450201","Red Goatfish",NA,NA,NA,NA,NA,34,NA,NA,NA,NA,"Mullidae","Actinopterygii","8835450201",NA,0,-1,-3,-2
+"248","8835450301","Spotted Goatfish",NA,1,NA,NA,NA,1,NA,NA,NA,NA,"Mullidae","Actinopterygii","8835450301",3.65666666666667,0,-1,-2,-2
+"249","8835510102","Bermuda Chub",4,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Kyphosidae","Actinopterygii","8835510102",2,0,-1,-2,-4
+"250","8835520101","Atlantic Spadefish",14678,1354,NA,49,3,6144,7,NA,6,NA,"Ephippidae","Actinopterygii","8835520101",3.804,0,-1,-2,-2
+"251","8835550101","Spotfin Butterflyfish",3,NA,NA,NA,NA,3,NA,NA,NA,NA,"Chaetodontidae","Actinopterygii","8835550101",3.7,0,-1,-1,-2
+"252","8835550103","Foureye Butterflyfish",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chaetodontidae","Actinopterygii","8835550103",3.8,0,-1,-2,-2
+"253","8835550402","French Angelfish",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Pomacanthidae","Actinopterygii","8835550402",2.57333333333333,0,-1,-1,-2
+"254","8835610301","Jewelfish",NA,51,NA,NA,NA,NA,1,NA,NA,NA,"Cichlidae","Actinopterygii","8835610301",NA,0,0,0,0
+"255","8835610401","Blue Tilapia",22,81,NA,NA,NA,2,2,NA,NA,NA,"Cichlidae","Actinopterygii","8835610401",2.06,0,-1,-5,-4
+"256","8835610402","Spotted Tilapia",NA,107,NA,NA,NA,NA,NA,NA,NA,NA,"Cichlidae","Actinopterygii","8835610402",NA,0,-1,-2,-3
+"257","8835610403","Blackchin Tilapia",107,68,NA,2,NA,NA,NA,NA,NA,NA,"Cichlidae","Actinopterygii","8835610403",2.02,0,-2,-4,-4
+"258","8835614003","Nile Tilapia",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Cichlidae","Actinopterygii","8835614003",2.08,0,-1,-4,-8
+"259","8835621233","Cocoa Damselfish",NA,NA,NA,NA,NA,3,NA,NA,NA,NA,"Pomacentridae","Actinopterygii","8835621233",2.54,0,-1,-1,-2
+"260","8835740101","Everglades Pygmy Sunfish",NA,1,NA,NA,NA,1,NA,NA,NA,NA,"Elassomatidae","Actinopterygii","8835740101",NA,0,-1,-1,-1
+"261","8835740102","Okefenokee Pygmy Sunfish",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,"Elassomatidae","Actinopterygii","8835740102",NA,0,-1,-1,-1
+"262","8835740103","Banded Pygmy Sunfish",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,"Elassomatidae","Actinopterygii","8835740103",NA,0,-1,-3,-1
+"263","8835750202","Striped Bass",9,3,NA,NA,NA,5,NA,NA,NA,NA,"Moronidae","Actinopterygii","8835750202",4.033,0,-6,-13,-11
+"264","8836010101","Striped Mullet",81999,112722,6,84493,253,31,1594,1427,3,NA,"Mugilidae","Actinopterygii","8836010101",2.78555555555556,0,-3,-24,-38
+"265","8836010102","White Mullet",22784,3994,NA,6832,NA,10,69,9,NA,NA,"Mugilidae","Actinopterygii","8836010102",2.005,0,-3,-9,-6
+"266","8836010105","Fantail Mullet",14887,14466,NA,7938,1,2,304,2,NA,NA,"Mugilidae","Actinopterygii","8836010105",NA,0,-2,-3,-4
+"267","8837010102","Sennet",9,225,NA,NA,NA,436,NA,NA,NA,NA,"Sphyraenidae","Actinopterygii","8837010102",NA,0,-1,-3,-2
+"268","8837010103","Guaguanche",7,25,NA,NA,NA,14,NA,NA,NA,NA,"Sphyraenidae","Actinopterygii","8837010103",4.325,0,-1,-2,-2
+"269","8837010104","Great Barracuda",3783,218,NA,8,NA,20,NA,NA,NA,NA,"Sphyraenidae","Actinopterygii","8837010104",4.434,0,-2,-4,-11
+"270","8838010101","Atlantic Threadfin",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Polynemidae","Actinopterygii","8838010101",NA,0,-1,-2,-2
+"271","8839010702","Slippery Dick",34,579,NA,NA,NA,727,NA,NA,NA,NA,"Labridae","Actinopterygii","8839010702",3.825,0,-1,-1,-2
+"272","8839010802","Pearly Razorfish",NA,1,NA,NA,NA,8,NA,NA,NA,NA,"Labridae","Actinopterygii","8839010802",3.56,0,-1,-1,-5
+"273","8839010901","Hogfish",47,5,NA,NA,NA,680,NA,NA,NA,NA,"Labridae","Actinopterygii","8839010901",4.03,0,-1,-2,-2
+"274","8839030201","Bluelip Parrotfish",NA,1,NA,NA,NA,5,NA,NA,NA,NA,"Scaridae","Actinopterygii","8839030201",NA,0,-1,-1,-2
+"275","8839030403","Redtail Parrotfish",4,NA,NA,NA,NA,13,NA,NA,NA,NA,"Scaridae","Actinopterygii","8839030403",2,0,-1,-1,-2
+"276","8839030404","Bucktooth Parrotfish",15,2,NA,NA,NA,28,NA,NA,NA,NA,"Scaridae","Actinopterygii","8839030404",2,0,-1,-1,-2
+"277","8839030405","Redfin Parrotfish",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Scaridae","Actinopterygii","8839030405",2,0,-1,-2,-2
+"278","8840020299","Spotfin Jawfish",1,1,NA,NA,NA,14,NA,NA,NA,NA,"Opistognathidae","Actinopterygii","8840020299",NA,0,-1,-1,-2
+"279","8840130204","Speckled Stargazer",NA,19,NA,NA,NA,NA,NA,NA,NA,NA,"Dactyloscopidae","Actinopterygii","8840130204",NA,0,-1,-1,-2
+"280","8840140102","Southern Stargazer",65,133,NA,NA,NA,70,NA,NA,NA,NA,"Uranoscopidae","Actinopterygii","8840140102",4.2,0,-1,-1,-2
+"281","8842010201","Feather Blenny",29,347,NA,NA,NA,428,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842010201",NA,0,-1,-3,-2
+"282","8842010202","Freckled Blenny",NA,2,NA,NA,NA,1,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842010202",NA,0,-1,-1,-2
+"283","8842010302","Florida Blenny",121,5515,NA,2,NA,1401,1,NA,NA,NA,"Blenniidae","Actinopterygii","8842010302",2.94166666666667,0,-1,-1,-2
+"284","8842010501","Crested Blenny",NA,5,NA,NA,NA,29,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842010501",NA,0,-1,-1,-2
+"285","8842010598","Zebratail Blenny",NA,11,NA,NA,NA,309,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842010598",NA,0,0,0,0
+"286","8842011402","Highfin Blenny",NA,10,NA,NA,NA,3,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842011402",NA,0,-1,-1,-2
+"287","8842012501","Seaweed Blenny",NA,10,NA,NA,NA,68,NA,NA,NA,NA,"Blenniidae","Actinopterygii","8842012501",NA,0,-1,-2,-2
+"288","8842090503","Banded Blenny",1,8,NA,NA,NA,1909,NA,NA,NA,NA,"Labrisomidae","Actinopterygii","8842090503",NA,0,-1,-1,-2
+"289","8842090506","Marbled Blenny",4,110,NA,NA,NA,601,NA,NA,NA,NA,"Labrisomidae","Actinopterygii","8842090506",NA,0,-1,-1,-2
+"290","8842090602","Checkered Blenny",NA,NA,NA,NA,NA,8,NA,NA,NA,NA,"Labrisomidae","Actinopterygii","8842090602",NA,0,-1,-1,-2
+"291","8846010702","Spotted Dragonet",NA,64,NA,NA,NA,63,NA,NA,NA,NA,"Callionymidae","Actinopterygii","8846010702",NA,0,-1,-2,-2
+"292","8847010501","Darter Goby",NA,10453,NA,NA,NA,1463,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010501",NA,0,-1,-2,-3
+"293","8847010503","Highfin Goby",2,64,NA,NA,NA,258,1,NA,NA,NA,"Gobiidae","Actinopterygii","8847010503",NA,0,-1,-2,-3
+"294","8847010504","Freshwater Goby",NA,17,NA,NA,NA,12,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010504",NA,0,0,0,0
+"295","8847010506","Marked Goby",NA,NA,NA,NA,NA,5,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010506",NA,0,-1,-1,-2
+"296","8847010511","Emerald Goby",NA,89,NA,NA,NA,8,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010511",NA,0,-1,-1,-2
+"297","8847010601","Naked Goby",2,7383,NA,NA,NA,716,6,147,NA,NA,"Gobiidae","Actinopterygii","8847010601",NA,0,-1,-2,-1
+"298","8847010603","Code Goby",NA,24129,NA,NA,NA,4824,1,10,NA,NA,"Gobiidae","Actinopterygii","8847010603",NA,0,-1,-1,-2
+"299","8847010606","Twoscale Goby",NA,36,NA,NA,NA,771,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010606",NA,0,-1,-1,-2
+"300","8847010701","Clown Goby",1,132801,NA,NA,NA,8338,37,391,NA,NA,"Gobiidae","Actinopterygii","8847010701",2.37,0,-1,-2,-2
+"301","8847010702","Green Goby",NA,1283,NA,NA,NA,5520,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010702",NA,0,-1,-2,-1
+"302","8847010703","Seminole Goby",NA,1,NA,NA,NA,4,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010703",NA,0,-1,-1,-2
+"303","8847010704","Banner Goby",NA,400,NA,NA,NA,203,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010704",NA,0,-1,-1,-2
+"304","8847010901","Notchtongue Goby",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Gobiidae","Actinopterygii","8847010901",NA,0,-1,-1,-2
+"305","8847010903","Frillfin Goby",3,1273,NA,NA,NA,95,25,17,1,NA,"Gobiidae","Actinopterygii","8847010903",NA,0,-1,-1,-4
+"306","8847011801","Emerald Sleeper",NA,NA,NA,NA,NA,3,NA,NA,NA,NA,"Eleotridae","Actinopterygii","8847011801",NA,0,-1,-1,-2
+"307","8847012501","Crested Goby",1,440,NA,NA,NA,88,NA,17,NA,NA,"Gobiidae","Actinopterygii","8847012501",NA,0,-1,-2,-3
+"308","8847013302","Fat Sleeper",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,"Eleotridae","Actinopterygii","8847013302",2.25,0,-2,-3,-4
+"309","8847013708","Largescaled Spinycheek Sleeper",NA,2,NA,NA,NA,1,NA,NA,NA,NA,"Eleotridae","Actinopterygii","8847013708",4.03,0,-1,-2,-2
+"310","8849010102","Doctorfish",2,NA,NA,NA,NA,1,NA,NA,NA,NA,"Acanthuridae","Actinopterygii","8849010102",2.09,0,-1,-2,-3
+"311","8850020201","Atlantic Cutlassfish",1,NA,NA,NA,NA,39,NA,NA,NA,NA,"Trichiuridae","Actinopterygii","8850020201",4.2,0,-2,-10,-18
+"312","8850030102","Little Tunny",3,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Scombridae","Actinopterygii","8850030102",4.36333333333333,0,-1,-7,-4
+"313","8850030502","Spanish Mackerel",1948,125,NA,3,NA,11,3,NA,3,NA,"Scombridae","Actinopterygii","8850030502",4.50666666666667,0,-1,-3,-2
+"314","8851020104","Spotted Driftfish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Ariommatidae","Actinopterygii","8851020104",NA,0,-1,-2,-1
+"315","8851030104","Gulf Butterfish",442,37,NA,NA,NA,872,NA,NA,NA,NA,"Stromateidae","Actinopterygii","8851030104",NA,0,-1,-1,-2
+"316","8851030106","Harvestfish",2289,19,NA,NA,NA,436,NA,NA,NA,NA,"Stromateidae","Actinopterygii","8851030106",4.5,0,-1,-3,-1
+"317","8857030106","Horned Whiff",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030106",NA,0,-1,-1,-1
+"318","8857030109","Spotted Whiff",506,148,NA,NA,NA,3423,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030109",NA,0,-1,-1,-2
+"319","8857030110","Bay Whiff",1373,167,NA,NA,NA,1233,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030110",3.83,0,-1,-2,-1
+"320","8857030201","Fringed Flounder",7768,855,NA,NA,NA,30234,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030201",3.49,0,-2,-2,-3
+"321","8857030202","Smallmouth Flounder",5,1,NA,NA,NA,139,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030202",NA,0,-1,-2,-2
+"322","8857030204","Gray Flounder",NA,2,NA,NA,NA,24,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030204",NA,0,-1,-1,-2
+"323","8857030205","Shelf Flounder",11,3,NA,NA,NA,434,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030205",NA,0,-1,-1,-1
+"324","8857030302","Gulf Flounder",10091,3743,NA,138,20,12084,25,NA,38,NA,"Paralichthyidae","Actinopterygii","8857030302",NA,0,-1,-1,-2
+"325","8857030304","Southern Flounder",925,182,NA,NA,NA,339,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030304",3.55,0,-1,-1,-2
+"326","8857030306","Broad Flounder",60,59,NA,NA,NA,3,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030306",NA,0,-1,-1,-2
+"327","8857030604","Twospot Flounder",1,NA,NA,NA,NA,10,NA,NA,NA,NA,"Bothidae","Actinopterygii","8857030604",NA,0,-1,-2,-1
+"328","8857030801","Mexican Flounder",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857030801",NA,0,-1,-1,-1
+"329","8857031301","Shoal Flounder",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857031301",NA,0,-1,-1,-2
+"330","8857031303","Dusky Flounder",3,NA,NA,NA,NA,16,NA,NA,NA,NA,"Paralichthyidae","Actinopterygii","8857031303",3.59,0,-1,-1,-2
+"331","8858020101","Blackcheek Tonguefish",318,4484,NA,NA,NA,15692,34,NA,NA,NA,"Cynoglossidae","Actinopterygii","8858020101",2.99,0,-1,-2,-1
+"332","8858020102","Offshore Tonguefish",NA,NA,NA,NA,NA,36,NA,NA,NA,NA,"Cynoglossidae","Actinopterygii","8858020102",NA,0,-1,-1,-2
+"333","8858020106","Pygmy Tonguefish",NA,NA,NA,NA,NA,12,NA,NA,NA,NA,"Cynoglossidae","Actinopterygii","8858020106",NA,0,-1,-1,-2
+"334","8858030101","Hogchoker",759,16844,NA,1,NA,58443,362,164,NA,NA,"Achiridae","Actinopterygii","8858030101",2.94,0,-1,-3,-2
+"335","8858030102","Scrawled Sole",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Achiridae","Actinopterygii","8858030102",NA,0,-1,-1,-2
+"336","8858030202","Lined Sole",195,4727,NA,NA,NA,4376,103,9,NA,NA,"Achiridae","Actinopterygii","8858030202",3.52,0,-2,-3,-3
+"337","8858030301","Naked Sole",NA,NA,NA,NA,NA,3,NA,NA,NA,NA,"Achiridae","Actinopterygii","8858030301",NA,0,-1,-2,-2
+"338","8858030303","Fringed Sole",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Achiridae","Actinopterygii","8858030303",NA,0,-1,-1,-2
+"339","8860020101","Orange Filefish",408,131,NA,1,NA,1401,NA,NA,NA,NA,"Monacanthidae","Actinopterygii","8860020101",2.02,0,-1,-3,-3
+"340","8860020104","Scrawled Filefish",1,NA,NA,NA,NA,1,NA,NA,NA,NA,"Monacanthidae","Actinopterygii","8860020104",2.81,0,-2,-5,-13
+"341","8860020701","Fringed Filefish",441,309,NA,NA,NA,12757,NA,NA,NA,NA,"Monacanthidae","Actinopterygii","8860020701",2.73,0,-2,-3,-2
+"342","8860020703","Planehead Filefish",7790,5887,NA,8,NA,36312,NA,NA,NA,NA,"Monacanthidae","Actinopterygii","8860020703",2.9,0,-1,-3,-3
+"343","8860020704","Pygmy Filefish",2,5,NA,NA,NA,NA,NA,NA,NA,NA,"Monacanthidae","Actinopterygii","8860020704",NA,0,-2,-2,-4
+"344","8860030101","Trunkfish",48,11,NA,NA,NA,29,NA,NA,NA,NA,"Ostraciidae","Actinopterygii","8860030101",3.29,0,-1,-2,-3
+"345","8860030201","Scrawled Cowfish",9446,684,NA,11,2,8377,NA,NA,NA,NA,"Ostraciidae","Actinopterygii","8860030201",2.565,0,-1,-3,-4
+"346","8860030202","Honeycomb Cowfish",NA,NA,NA,NA,NA,2,NA,NA,NA,NA,"Ostraciidae","Actinopterygii","8860030202",2.03,0,-1,-2,-2
+"347","8861010101","Smooth Puffer",1,NA,NA,NA,NA,2,NA,NA,NA,NA,"Tetraodontidae","Actinopterygii","8861010101",NA,0,-1,-2,-3
+"348","8861010201","Northern Puffer",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,"Tetraodontidae","Actinopterygii","8861010201",NA,0,-2,-4,-2
+"349","8861010202","Checkered Puffer",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Tetraodontidae","Actinopterygii","8861010202",3.58,0,-2,-3,-3
+"350","8861010208","Southern Puffer",11398,11525,NA,223,NA,7035,56,2,73,NA,"Tetraodontidae","Actinopterygii","8861010208",2.4,0,-1,-1,-2
+"351","8861010210","Least Puffer",55,109,NA,NA,NA,216,NA,NA,NA,NA,"Tetraodontidae","Actinopterygii","8861010210",NA,0,-1,-1,-2
+"352","8861010211","Bandtail Puffer",66,44,NA,NA,NA,250,NA,NA,NA,NA,"Tetraodontidae","Actinopterygii","8861010211",3.27,0,-1,-2,-3
+"353","8861030101","Striped Burrfish",18045,2114,NA,343,3,23127,NA,NA,6,NA,"Diodontidae","Actinopterygii","8861030101",3.51,0,-1,-4,-2
+"354","8861030201","Porcupinefish",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Diodontidae","Actinopterygii","8861030201",3.655,0,-2,-9,-14
+"355","8861030202","Balloonfish",14,2,NA,NA,NA,5,NA,NA,NA,NA,"Diodontidae","Actinopterygii","8861030202",3.925,0,-2,-6,-11
