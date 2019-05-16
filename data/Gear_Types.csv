@@ -1,0 +1,136 @@
+Gear,Description,Category
+-1,Station could not be sampled for any parameters - IMAP data only,No gear
+0,No Set,No gear
+1,6.1 seine w/o bag, 3.1mm mesh.
+10,21.3m center-bag seine, 3.1mm mesh
+100,21.3m terminal-bag seine, 300mm lead spacing
+101,21.3m terminal-bag seine, 300mm lead spacing
+102,21.3m terminal-bag seine,150mm lead spacing
+103,21.3m terminal-bag seine, 150mm lead spacing
+104,21.3m center-bag seine, 150mm lead spacing
+105,21.3m center-bag seine, 150mm lead spacing
+106,21.3m terminal-bag seine, offshore-circular set in association with 1m2 dropnets.
+107,21.3m center-bag seine, 3.1mm mesh. 150mm lead spacing
+11,21.3m center-bag seine, 3.1mm mesh
+12,21.3m center-bag seine, 3.1mm mesh
+13,21.3m terminal-bag seine, 3.1mm mesh
+148,30.5-m center bag seine, 6.3-mm mesh
+150,61m seine, used as a drag seine on poles and deployed from a boat
+151,122m pull through seine, 3.1mm mesh
+152,122m purse seine, 3.1mm mesh
+153,61m blocknet, 300mm lead spacing. Used in association with mangroves.
+154,61m blocknet, 300mm lead spacing.  Used in association with seawall.
+155,183m center-bag seine 25.4mm stretch mesh  (12.7mm bar mesh), 150mm lead spacing
+156,30m center-bag seine 6.25mm stretch mesh, set from skiff onshore (boat set).Similar to McMichael & Peters net.
+157,183m center-bag seine 25.4mm stretch mesh (12.7mm bar mesh), 150mm lead spacing.  Net set from skiff in a semicircular pattern on shore in water depth < 0.1 m.
+158,183m center-bag seine 25.4mm stretch mesh (12.7mm bar mesh), 150mm lead spacing.  Net set from skiff in a semicircular pattern on shore in water depth > 0.1 m.
+159,183m center-bag seine 25.4mm stretch mesh (12.7mm bar mesh), 150mm lead spacing.  Net set from skiff in a circular pattern on shore in water depth > 0.1 m.
+160,183m center-bag seine, green dipped
+161,183m center-bag seine, green dipped
+162,183m center-bag seine, green dipped
+170,183m terminal bag purse seine, 51mm stretch mesh (25.5mm bar mesh) with 305-mm lead spacing and 457-mm float spacing.  Wing depth is 5.2-m and bag depth is 7.6-m.
+180,61m center-bag seine, 3.7m deep
+2,6.1 center bag seine, 3.1mm mesh
+20,21.3m center-bag seine, 3.1mm mesh
+200,Small mesh gillnet (5-panel),Gillnet
+201,Small mesh gillnet with three panels: 15m of 50mm mesh, 30m of 75mm mesh and 100m of 100mm mesh.
+202,Small mesh gillnet with three panels: 15m of 50mm mesh, 45m of 75mm mesh and 45m of 100mm mesh.
+203,Small mesh gillnet with  three panels: 15m of 50mm mesh, 60m of 75mm mesh and 60m of 100mm mesh
+204,184m large mesh gillnet with four panels: 46m each of 75mm, 100mm
+205,184m large mesh gillnet with four panels: 46m each of 75mm, 100mm
+206,184m large mesh gillnet with four panels: 46m each of 75mm, 100mm
+207,198m large mesh gillnet with five panels: 15m of 50mm mesh (#139 twine), and 46m each of 75mm
+208,198m large mesh gillnet with five panels: 15m of 50mm mesh (# 139 twine), and 46m each of 75mm
+209,198m large mesh gillnet with five panels: 15m of 50mm mesh (#139 twine), and  46m each of 75mm
+21,21.3m terminal-bag seine, 3.1mm mesh
+211,46m gillnet with six panels: 7.6m of  51mm, 45mm
+212,46m gillnet with six panels: 7.6m of  51mm, 45mm
+22,21.3m center-bag seine, 3.1mm mesh
+225,243.8m gillnet with 50mm mesh.  Used from 1981 – 1983 during McMichael red drum study.,Gillnet
+226,183m gillnet with four panels: 13mm, 19mm
+23,21.3 center-bag seine, 3.1mm mesh
+24,21.3m center-bag seine, 3.1mm mesh
+25,21.3m center-bag seine, 3.1mm mesh
+250,547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.,Trammel net
+251,366m monofilament trammel net. 2.4m deep, 72mm mesh (#104 twine) inner wall and 300mm mesh (#208) outer walls. Net used in directed mullet survey.
+252,547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.  Net Not Set.,Trammel net
+253,547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walsl.  Net used in directed redfish study.  Blind Set.,Trammel net
+254,366m monofilament trammel net. 2.4m deep, 72mm mesh (#104 twine) inner wall and 300mm mesh (#208) outer walls. Net used in directed mullet survey. Net Not Set.
+255,366m monofilament trammel net. 2.4m deep, 72mm mesh (#104 twine) inner wall and 300mm mesh (#208) outer walls. Net used in directed mullet survey.  Blind Set.
+256,Nylon trammel net 273m - Normal set.  Used for directed red drum hatchery project Fall 2000,Trammel net
+257,Nylon trammel net 273m - Blind set.  Used for directed red drum hatchery project.  Fall 2000,Trammel net
+258,Nylon trammel net 273m - No set.  Used for directed red drum hatchery project.  Fall 2000,Trammel net
+26,21.3m center-bag seine, 3.1mm mesh
+260,245m nylon trammel net, inner wall 51mm mesh (#9 twine)
+261,245m nylon trammel net, inner wall 51mm mesh (#9 twine)
+262,245m nylon trammel net, inner wall 51mm mesh (#9 twine)
+27,21.3m center-bag seine, 3.1mm mesh
+28,21.3m center-bag seine, 3.1mm mesh
+29,21.3m center-bag seine, 3.1mm mesh
+3,6.1-m center bag seine, 1.6-mm mesh
+300,6.1m otter trawl w/ 3.1mm liner & tickler chain.  A straight tow.,6.1-m Trawl
+301,6.1m otter trawl w/ 3.1mm liner & tickler chain.  An arc tow.,6.1-m Trawl
+302,6.1m otter trawl w/o liner w/tickler chain.  A straight tow.,6.1-m Trawl
+303,3.7m otter trawl w/ 3.1mm liner & w/o tickler chain.  A straight tow.,3.7-m Trawl
+304,3.7m otter trawl w/o liner & w/o tickler chain.  A straight tow.,3.7-m Trawl
+305,3.7m otter trawl w/ 3.1mm liner & w/o tickler chain.  An arc tow.,3.7-m Trawl
+306,6.1m otter trawl w/ 3.1mm liner & tickler chain.  A combination tow (straight trawl/arc boat),6.1-m Trawl
+325,3.0m PI&F trawl with 19mm mesh, 0.5m deep with 6.3mm cod end.  Used from 1981 – 1983 during McMichael red drum study.
+349,Roller frame trawl,Trawl
+350,Roving dropnet, 1 m2
+351,Stationary dropnet, 1 m2
+352,Stationary dropnet, 2 m2
+353,Stationary dropnet, 4 m2
+354,Roving dropnet (w/17' whaler),Dropnet
+4,12.2-m center bag seine, 6.3-mm mesh
+400,Plexiglass traps,Trap
+401,Pound net,Pound Net
+402,Stop nets, e.g. Alafia canal
+403,184m large mesh gillnet with four panels: 46m each of 75mm, 100mm
+404,184m large mesh gillnet with four panels: 46m each of 75mm, 100mm
+405,198m large mesh gillnet with five panels: 15m of 50mm mesh (#208 twine), and  46m each of 75mm
+406,198m large mesh gillnet with five panels: 15m of 50mm mesh (#208 twine), and  46m each of 75mm
+407,91m center bag seine, 18.8m stretch mesh
+408,6.1m center bag seine 3.1mm mesh, leads spaced at 150mm. Modified beach set.  Now under Gear Code 2.
+409,198m large mesh gillnet with five panels: 15m of 50mm mesh (#139 twine),  and  46m each of 75mm
+410,198m large mesh gillnet with five panels: 15m of 50mm mesh (#139 twine), and  46m each of 75mm
+411,366m multi-panel gillnet, four panels 30.5m by 3.0m deep: 100mm mesh (#177 twine)
+412,\366m multi-panel gillnet, four panels 30.5m by 3.0m deep: 100mm mesh (#177 twine)
+413,366m trammel net, inner wall 72mm mesh (#104 twine)
+414,366m trammel net, inner wall 72mm mesh (#104 twine)
+415,122m center-bag undipped seine, 25mm stretch mesh (12.5mm bar mesh)
+416,122m center-bag black dipped seine, 37.5mm stretch mesh (18.8mm bar mesh)
+417,183m center-bag green dipped seine, 37.5mm stretch mesh (18.8mm bar mesh)
+418,244m center-bag undipped seine, 50mm stretch mesh (25mm bar mesh)
+419,365.8m purse seine, 38.1mm stretch mesh
+420,183m center-bag seine, undipped
+421,183m center-bag seine, undipped
+422,183m center-bag seine, undipped
+423,61m center-bag seine, undipped
+424,61m center-bag seine, undipped
+425,61m center-bag seine, undipped
+426,Fish trap, modified Antillean Z trap design with 30mm x 50mm mesh with diagonal 55mm.  Used in the Florida Keys.
+427,Fish trap, modified Antillean Z trap design with 30mm x 15mm mesh with diagonal 30mm.  Used in the Florida Keys.
+428,0.6m Fyke net, 3.0m long with 38mm square mesh.  Used in the Florida Keys.
+429,0.9m Fyke net, 3.7m long with 25mm square mesh.  Used in the Florida Keys.
+430,229mm Gee minnow trap, 444.5mm long with 6mm mesh.  Used in the Florida Keys.
+431,183m terminal bag purse seine, 51mm stretch mesh (25.5mm bar mesh) with 305-mm lead spacing and 457-mm float spacing.  Wing depth is 5.2-m and bag depth is 7.6-m.  Used during gear testing 04/96 – 12/97; now under gear code 170.
+432,229m nylon trammel net with 359mm mesh outer wall (#21) and 45mm mesh inner wall (#9).  Net used in MPA study.,Trammel net
+434,245m nylon trammel net, inner wall 51mm mesh (#9 twine)
+436,40m center-bag seine, 25mm stretch mesh knotted nylon (#9 twine)
+5,9.1-m center bag seine, 1.2-m deep
+800,Hook and line,Miscellaneous
+801,Castnet,Miscellaneous
+802,Electrofishing,Miscellaneous
+803,Hook & Line, but recorded on standard FIM data sheets - not H&L data sheet
+810,1.0m Plankton net with 500?m mesh.  Used from 1981 – 1993 during McMichael red drum study.,Plankton Net
+811,1.0m Plankton net with 1mm mesh. Used from 1981 – 1993 during McMichael red drum study.,Plankton Net
+812,1.0m Plankton net with 1mm mesh on bottom sled. Used from 1981 – 1993 during McMichael red drum study.,Plankton Net
+813,1.0m Bottom sled, 0.6m deep with 1mm mesh. Used from 1981 – 1993 during McMichael red drum study.
+814,1.0m2 Push net with 1mm mesh. Used from 1981 – 1993 during McMichael red drum study.,Push Net
+816,Dip net,Dip Net
+817,Offshore purse seine with spotter planes to collect adult Red Drum,Purse Seine
+850,Fish kill—Any fish found dead in water that was not caught by a biologist or angler.  Includes red tides, cold kills
+211,46m gillnet with six panels: 7.6m of  51mm, 45mm
+212,46m gillnet with six panels: 7.6m of  51mm, 45mm
+209,198m large mesh gillnet with five panels: 15m of 50mm mesh (#139 twine), and  46m each of 75mm

@@ -1,0 +1,288 @@
+---
+title: "Extracting_Herbivores"
+author: "Jenn_McHenry"
+date: "May 8, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+library(rfishbase)
+library(sf)
+library(rgdal)
+library(maptools)
+library(lubridate)
+library(sp)
+library(RchivalTag)
+```
+
+
+# Extracting Reference Information
+```{r}
+FIM_SQL_site_info=read.csv("data/Site_info_08_28_2018.csv")
+
+FIM_Gear=read.csv("data/Gear_Types.csv");colnames(FIM_Gear)<-c("Gear","Gear_Description","Gear_Category")
+
+FIM_Effort_Correction=read.csv("data/FIM_Effort_Correction.csv")
+
+FIM_Gear_Effort_Correction=plyr::join(FIM_Effort_Correction,FIM_Gear,by="Gear")
+
+study_area<-readShapePoly("C:/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServices/Biodiversity_Data_Exploration/data/FWRI_FIM_SQL_Database_ALL/Florida_Gulf_Study_Area.shp",proj4string = CRS("+proj=longlat +datum=WGS84"))
+
+# #plotting all sites
+# plot(FIM_SQL_site_info$Longitude,FIM_SQL_site_info$Latitude)
+# plot(study_area,add=TRUE)
+
+
+FIM_SQL_site_info_fixed<-FIM_SQL_site_info%>%
+  filter(Latitude>=20)%>%
+  mutate(BottomVegCover=ifelse(BottomVegCover=="." | BottomVegCover=="", NA , as.character(BottomVegCover)),BottomVegCover2=as.integer(BottomVegCover),BottomVegCover3=ifelse(BottomVegCover2>101,NA,as.integer(BottomVegCover2)))%>%
+  mutate(BottomVegCover=ifelse(BottomVegCover3>100,NA,BottomVegCover3))%>%
+  mutate(ShoreDistance=ifelse(ShoreDistance=="." | ShoreDistance=="", NA , as.character(ShoreDistance)),ShoreDistance2=as.integer(ShoreDistance))%>%
+  mutate(ShoreDistance=ShoreDistance2)%>%
+  mutate(Vegetated=ifelse(BottomVegCover3>0,1,ifelse(BottomVegCover3==0,0,NA)))%>%
+  dplyr::select(-BottomVegCover2,-BottomVegCover3,-ShoreDistance2)
+
+# #plotting all sites
+# plot(FIM_SQL_site_info_fixed$Longitude,FIM_SQL_site_info_fixed$Latitude)
+# plot(study_area,add=TRUE)
+
+
+#clipping out sites that are on the east coast of FL
+coordinates(FIM_SQL_site_info_fixed) <- ~Longitude+Latitude
+proj4string(FIM_SQL_site_info_fixed)<- "+proj=longlat +datum=WGS84"
+proj4string(study_area)<- "+proj=longlat +datum=WGS84"
+
+FIM_SQL_site_info_clip <- FIM_SQL_site_info_fixed[study_area, ]
+
+FIM_SQL_site_info_clip<-as.data.frame(FIM_SQL_site_info_clip)
+summary((FIM_SQL_site_info_clip$BottomVegCover))
+# 
+# plot(FIM_SQL_site_info_clip$Longitude,FIM_SQL_site_info_clip$Latitude)
+# plot(study_area,add=TRUE)
+
+
+
+#Parsing out the most standardized datasets
+FIM_SQL_site_info_1997_2017<-FIM_SQL_site_info_clip%>%
+  dplyr::select(TripID,Reference,Sampling_Date,Gear,Project_1,Project_2,Project_3,Station_1,Station_2,Station_3,Stratum,Rep,Longitude,Latitude,StartDepth, Secchi_on_bottom, Secchi_depth, Sediment_Depth, SAM,BottomVegCover,Vegetated,Seagrass_habitat_descriptor,Distance_to_edge,TotalShoreCover,Dist_to_Shore,Dist_to_MHTM)%>%
+  mutate(Sampling_Date=as_date(Sampling_Date))%>%
+  mutate(month=months(Sampling_Date),day=day(Sampling_Date),year=year(Sampling_Date))%>%
+  mutate(month=factor(month,levels = c("January","February","March","April","May","June","July","August","September","October","November","December")),Seagrass_habitat_descriptor=as.factor(Seagrass_habitat_descriptor))%>%
+  filter(year >= 1997)%>%
+  filter(is.na(Longitude)!=TRUE)%>%
+  filter(Longitude < 0.00 | Latitude > 0.00)%>%
+  # filter(Project_1=="AM" | Project_2=="AM" | Project_3=="AM" | Project_1=="AS" | Project_2=="AS" | Project_3=="AS"| Project_1=="WI" | Project_2=="WI" | Project_3=="WI" | Project_1=="AR" | Project_2=="AR" | Project_3=="AR" | Project_1=="AK" | Project_2=="AK" | Project_3=="AK" | Project_1=="AI" | Project_2=="AI" | Project_3=="AI" | Project_1=="WO" | Project_2=="WO" | Project_3=="WO" | Project_1=="WS" | Project_2=="WS" | Project_3=="WS")%>%
+  droplevels()%>%
+  filter(Rep==1)
+
+summary(FIM_SQL_site_info_1997_2017$BottomVegCover)
+summary(FIM_SQL_site_info_1997_2017$StartDepth)
+summary(FIM_SQL_site_info_1997_2017$SAM)
+
+
+# #plotting all sites
+# plot(FIM_SQL_site_info_1997_2017$Longitude,FIM_SQL_site_info_1997_2017$Latitude)
+# plot(study_area,add=TRUE)
+
+FIM_SQL_site_info_1997_2017_Gear=plyr::join(FIM_SQL_site_info_1997_2017,FIM_Gear,by="Gear",type="inner")
+
+FIM_SQL_site_info_1997_2017_GearEffort=plyr::join(FIM_SQL_site_info_1997_2017_Gear,FIM_Effort_Correction[c(2,4)],by="Reference",type="inner")
+
+names(FIM_SQL_site_info_1997_2017_GearEffort)
+levels(droplevels(as.factor(FIM_SQL_site_info_1997_2017_GearEffort$Gear_Category)))
+levels(droplevels(as.factor(FIM_SQL_site_info_1997_2017_GearEffort$Gear_Description)))
+```
+
+
+```{r}
+species_list=read.csv("C:/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServices/Biodiversity_Data_Exploration/data/FWRI_FIM_SQL_Database_ALL/Species_list_queried08282018.csv")
+names(species_list)
+
+species_fields=load_taxa(species_list=species_list$Scientificname)
+colnames(species_fields)[2]<-c("Scientificname")
+names(species_fields)
+
+species_diet=diet(species_list=species_list$Scientificname)
+names(species_diet)
+head(species_diet)
+species_diet=species_diet%>%
+  dplyr::select(SpecCode,Species,Troph,seTroph)%>%
+  dplyr::filter(is.na(Troph)==FALSE)%>%
+  dplyr::group_by(Species)%>%
+  dplyr::summarize(Troph=mean(Troph,na.rm=TRUE))%>%
+  dplyr::mutate(Scientificname=Species)%>%
+  dplyr::select(-Species)
+  
+
+species_ecology=ecology(species_list=species_list$Scientificname)
+names(species_ecology)
+species_ecology=species_ecology%>%
+  dplyr::select(SpecCode,Species,DietTroph,DietSeTroph)%>%
+  dplyr::filter(is.na(DietTroph)==FALSE)%>%
+  dplyr::group_by(Species)%>%
+  dplyr::summarize(DietTroph=mean(DietTroph,na.rm=TRUE))%>%
+  dplyr::mutate(Scientificname=Species)%>%
+  dplyr::select(-Species)
+  
+  
+
+species_ecosystem=ecosystem(species_list=species_list$Scientificname)
+names(species_ecosystem)
+head(species_ecosystem)
+
+species_ecosystem=species_ecosystem%>%
+  dplyr::select(Species,Climate,Polar,Boreal,Temperate,Subtropical)
+
+species_ecosystem=species_ecosystem[complete.cases(species_ecosystem),]
+names(species_ecosystem)
+species_ecosystem=species_ecosystem%>%
+  dplyr::group_by(Species)%>%
+  dplyr::summarize(Polar=sum(Polar,na.rm=TRUE),Boreal=sum(Boreal,na.rm=TRUE),Temperate=sum(Temperate,na.rm=TRUE),Subtropical=sum(Subtropical,na.rm=TRUE))%>%
+  dplyr::mutate(Scientificname=Species)%>%
+  dplyr::select(-Species)
+  
+
+```
+
+
+#Finalizing the list
+```{r}
+species_list_modified=plyr::join(species_fields,species_list[c(1,4:5)],by="Scientificname",type="left")
+
+species_list_modified=plyr::join(species_list_modified,species_diet,by="Scientificname",type="left")
+
+species_list_modified=plyr::join(species_list_modified,species_ecology,by="Scientificname",type="left")
+
+species_list_modified=plyr::join(species_list_modified,species_ecosystem,by="Scientificname",type="left")
+
+species_list_modified=as.data.frame(species_list_modified)%>%
+  dplyr::filter(Commonname!=".")%>%
+  dplyr::select(-1,-3,-4,-8)%>%
+  mutate(Scientificname=as.factor(Scientificname),Family=as.factor(Family),Order=as.factor(Order),Class=as.factor(Class))
+  # dplyr::filter(is.na(DietTroph)!=TRUE)
+
+species_list_modified=as.data.frame(species_list_modified)
+
+summary(species_list_modified)
+
+```
+
+
+
+##Loading the abundance data
+```{r}
+#Species Abundance information
+FIM_SQL_Species_N=read.csv("C:/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServices/Biodiversity_Data_Exploration/data/FWRI_FIM_SQL_Database_ALL/Species_abundance_queried09112018.csv")
+# summary(FIM_SQL_Species_N)
+names(FIM_SQL_Species_N)
+head(FIM_SQL_Species_N)
+str(FIM_SQL_Species_N)
+# 
+Parrotfish=species_list_modified%>%
+  filter(Family=="Scaridae")
+
+Parrotfish_Abund=plyr::join(as.data.frame(Parrotfish),as.data.frame(FIM_Species_Abundance),by="NODCCODE",type="inner")
+
+FIM_Species_Abundance=FIM_SQL_Species_N%>%
+  dplyr::select(Reference,Species_record_id,NODCCODE,Number)%>%
+  mutate(NODCCODE=as.factor(NODCCODE))%>%
+  group_by(Reference,NODCCODE)%>%
+  dplyr::summarize(Number=mean(Number))
+
+FIM_Species_Abundance_1997_2017=plyr::join(FIM_SQL_site_info_1997_2017_GearEffort,FIM_Species_Abundance,by="Reference",type="inner")
+
+levels(droplevels(FIM_Species_Abundance_1997_2017$Gear_Description))
+
+FIM_Species_Abundance_1997_2017_modified=FIM_Species_Abundance_1997_2017%>%
+  # mutate(Effort=ifelse(Gear==1 | Gear==2,0.3117,ifelse(Gear==5,0.11,ifelse(Gear==11 | Gear==13 | Gear==20 | Gear==21 | Gear==25 | Gear==26 | Gear==29 | Gear==100 | Gear==102 | Gear==103 | Gear==104 | Gear==105 | Gear==107 | Gear==107,1.4,ifelse(Gear==12 | Gear==22 | Gear==24 | Gear==27 | Gear==28,3.38,ifelse(Gear==10 | Gear==23,0.68,ifelse(Gear==160,41.20,ifelse(Gear==170,22.09,ifelse(Gear==180,4.65,ifelse(Gear==204 | Gear==205 | Gear==206 | Gear==207 | Gear==208 | Gear==209 | Gear==403 | Gear==404 | Gear==405 | Gear==406 | Gear==409 | Gear==410,NA,ifelse(Gear==300 | Gear==301 | Gear==306,NA,ifelse(Gear==350 | Gear==351 | Gear==354,1,NA))))))))))))%>%
+  # mutate(Number_100sqm=Number/Effort,Number_sqkm=Number_100sqm*(100/1e-4),Number_Hectare=(Number_100sqm*100)/0.01)%>%
+  mutate(Latitudinal_Bin=ifelse(Latitude<=26,"25-26",ifelse(Latitude<=27 & Latitude>26,"26-27",ifelse(Latitude<=28 & Latitude>27,"27-28",ifelse(Latitude<=29 & Latitude>28,"28-29",ifelse(Latitude<=30 & Latitude>29,"29-30",">30"))))))%>%
+    droplevels()%>%
+  filter(Gear_Description!="183m terminal bag purse seine")%>%
+  filter(Gear_Description!="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.  Net Not Set.")%>%
+  filter(Gear_Description!="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walsl.  Net used in directed redfish study.  Blind Set.")%>%
+  mutate(Gear_Description=ifelse(Gear_Description=="183m center-bag seine","183m seine",ifelse(Gear_Description=="21.3 center-bag seine","21.3m seine",ifelse(Gear_Description=="21.3m center-bag seine","21.3m seine", ifelse(Gear_Description=="366m monofilament trammel net. 2.4m deep","366m monofilament trammel net",ifelse(Gear_Description=="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.","547m nylon trammel net", ifelse(Gear_Description=="6.1m otter trawl w/ 3.1mm liner & tickler chain.  A straight tow.","6.1m otter trawl",ifelse(Gear_Description=="6.1m otter trawl w/ 3.1mm liner & tickler chain.  An arc tow.","6.1m otter trawl", ifelse(Gear_Description=="61m center-bag seine","61m seine", ifelse(Gear_Description=="9.1-m center bag seine","9.1m seine", ifelse(Gear_Description=="Hook and line","Hook and line", ifelse(Gear_Description=="Offshore purse seine with spotter planes to collect adult Red Drum","Offshore Purse Seine",ifelse(Gear_Description=="Nylon trammel net 273m - Blind set.  Used for directed red drum hatchery project.  Fall 2000","273m nylon trammel net",ifelse(Gear_Description=="Nylon trammel net 273m - Normal set.  Used for directed red drum hatchery project Fall 2000","273m nylon trammel net","No Set"))))))))))))))%>%
+  mutate(Gear_Description=as.factor(Gear_Description))%>%
+  filter(Gear_Description!="Hook and Line")%>%
+  filter(Gear_Description!="No Set")%>%
+  droplevels()
+
+FIM_Species_Abundance_1997_2017_modified=plyr::join(FIM_Species_Abundance_1997_2017_modified,species_list_modified,by="NODCCODE",type="inner")
+
+names(FIM_Species_Abundance_1997_2017_modified)
+levels(FIM_Species_Abundance_1997_2017_modified$Gear_Description)
+levels(FIM_Species_Abundance_1997_2017_modified$Commonname)
+```
+
+#Manipulating a final dataset
+```{r}
+FIM_Species_Abundance_Tibble_1997_2017=as_data_frame(FIM_Species_Abundance_1997_2017_modified)
+
+print(FIM_Species_Abundance_Tibble_1997_2017)
+
+summary(FIM_Species_Abundance_Tibble_1997_2017$Number)
+
+Top_Species_Overall_By_Gear=FIM_Species_Abundance_Tibble_1997_2017%>%
+  dplyr::select(NODCCODE,Commonname,Number,Gear_Description,Latitudinal_Bin,Troph,BottomVegCover)%>%
+  dplyr::group_by(NODCCODE,Commonname,Gear_Description)%>%
+  dplyr::summarize(Total_Count=sum(Number,na.rm = TRUE))%>%
+  dplyr::arrange(desc(Total_Count))%>%
+  tidyr::spread(key=Gear_Description,value=Total_Count)
+
+print(Top_Species_Overall_By_Gear)
+
+Top_Species_Overall_By_Gear_Trophic_Levels=plyr::join(as.data.frame(Top_Species_Overall_By_Gear),species_list_modified[c(5:7,9:12)],by=c("NODCCODE","Commonname"),type="left")
+write.csv(Top_Species_Overall_By_Gear_Trophic_Levels,file="data/Top_Species_Overall_ByGearType.csv")
+
+
+Top_Species_Overall_By_LatitudeBin=FIM_Species_Abundance_Tibble_1997_2017%>%
+  dplyr::select(NODCCODE,Commonname,Number,Gear_Description,Latitudinal_Bin,Troph,BottomVegCover)%>%
+  dplyr::group_by(NODCCODE,Commonname,Latitudinal_Bin)%>%
+  dplyr::summarize(Total_Count=sum(Number,na.rm = TRUE))%>%
+  dplyr::arrange(desc(Total_Count))%>%
+  tidyr::spread(key=Latitudinal_Bin,value=Total_Count)
+
+print(Top_Species_Overall_By_LatitudeBin)
+
+Top_Species_Overall_By_LatitudeBin_Trophic_Levels=plyr::join(as.data.frame(Top_Species_Overall_By_LatitudeBin),species_list_modified[c(5:7,9:12)],by=c("NODCCODE","Commonname"),type="left")
+
+write.csv(Top_Species_Overall_By_LatitudeBin_Trophic_Levels,file="data/Top_Species_Overall_ByLatitudeBin.csv")
+```
+
+
+
+```{r}
+FIM_SQL_Hydro_info=read.csv("data/HydroLab_info_queried08292018.csv")
+names(FIM_SQL_Hydro_info)
+
+
+FIM_SQL_Hydro_Profile_Interp=plyr::join(FIM_SQL_site_info_1997_2017[c(2:3)],FIM_SQL_Hydro_info,by="Reference",type="inner")
+colnames(FIM_SQL_Hydro_Profile_Interp)[2]<-c("date")
+
+FIM_SQL_Hydro_Profile_Interp=interpolate_TempDepthProfiles(ts=FIM_SQL_Hydro_Profile_Interp, Temp_field="Temperature", ID_key="Reference",Depth_res=1, show_info=TRUE, Data_Source='station')
+
+FIM_SQL_Hydro_Profile_Info=get_thermalstrat(FIM_SQL_Hydro_Profile_Interp, dz=20,na.rm=TRUE,Depth_res=0.5)
+
+summary(FIM_SQL_Hydro_Profile_Info)
+
+
+#selecting bottom values only 
+FIM_SQL_Hydro_Bottom_info=FIM_SQL_Hydro_info%>%
+  group_by(Reference)%>%
+  slice(which.max(Depth))
+
+#selecting surface values only 
+FIM_SQL_Hydro_Surface_info=FIM_SQL_Hydro_info%>%
+  group_by(Reference)%>%
+  slice(which.min(Depth))
+# 
+
+
+FIM_SQL_Hydro_Bottom_info=join(FIM_reference,FIM_SQL_Hydro_Bottom_info,by="Reference",type="left")
+FIM_SQL_Hydro_Surface_info=join(FIM_reference,FIM_SQL_Hydro_Surface_info,by="Reference",type="left")
+
+
+```
