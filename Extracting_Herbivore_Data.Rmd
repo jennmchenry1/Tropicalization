@@ -205,7 +205,11 @@ FIM_Species_Abundance=FIM_SQL_Species_N%>%
 Parrotfish=species_list_modified%>%
   filter(Family=="Scaridae")
 
+<<<<<<< HEAD
 Parrotfish_Abund=plyr::join(as.data.frame(Parrotfish),as.data.frame(FIM_Species_Abundance),by="NODCCODE",type="left")
+=======
+Parrotfish_Abund=plyr::join(as.data.frame(Parrotfish),as.data.frame(FIM_Species_Abundance),by="NODCCODE",type="inner")
+>>>>>>> f251cca4063bf8cddc36abc6981dc9bdd2cf1922
 
 FIM_Species_Abundance_1997_2017=plyr::join(FIM_SQL_site_info_1997_2017_GearEffort,FIM_Species_Abundance,by="Reference",type="inner")
 
