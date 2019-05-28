@@ -220,9 +220,6 @@ summary(species_list_modified)
 ```
 
 
-
-
-
 ##Loading the abundance data
 ```{r}
 #Species Abundance information
@@ -348,7 +345,7 @@ Top_Species_Overall_By_Gear_Atlantic=FIM_Species_Abundance_Tibble_1997_2017_Atla
 
 print(Top_Species_Overall_By_Gear_Atlantic)
 
-Top_Species_Overall_By_Gear_Atlantic_Trophic_Levels=plyr::join(as.data.frame(Top_Species_Overall_By_Gear),species_list_modified[c(5,2,4:7,9:12)],by=c("NODCCODE","Commonname"),type="left")
+Top_Species_Overall_By_Gear_Atlantic_Trophic_Levels=plyr::join(as.data.frame(Top_Species_Overall_By_Gear_Atlantic),species_list_modified[c(5,2,4:7,9:12)],by=c("NODCCODE","Commonname"),type="left")
 write.csv(Top_Species_Overall_By_Gear_Atlantic_Trophic_Levels,file="output_tables/Top_Species_Overall_ByGearType_Atlantic.csv")
 
 
