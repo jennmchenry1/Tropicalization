@@ -15,6 +15,7 @@ library(rgdal)
 library(maptools)
 library(lubridate)
 library(sp)
+library(lubridate)
 library(RchivalTag)
 ```
 
@@ -39,6 +40,8 @@ FIM_SQL_Gear_Corrected=FIM_Effort_Correction%>%
   mutate(Wng_dpth=ifelse(Wng_dpth=="NULL",NA,Wng_dpth),NetWidth=ifelse(NetWidth=="NULL",NA,NetWidth),Soaktime=ifelse(Soaktime=="NULL",NA,Soaktime),Dist_tow=ifelse(Dist_tow=="NULL",NA,Dist_tow))%>%
   mutate(Effort=ifelse(Gear==300 | Gear==301 | Gear==306,((Dist_tow*4*1853)/100),ifelse(Gear==1 | Gear==2,0.3117,ifelse(Gear==5,0.11,ifelse(Gear==11 | Gear==13 | Gear==20 | Gear==21 | Gear==25 | Gear==26 | Gear==29 | Gear==100 | Gear==102 | Gear==103 | Gear==104 | Gear==105 | Gear==107 | Gear==107,1.4,ifelse(Gear==12 | Gear==22 | Gear==24 | Gear==27 | Gear==28,3.38,ifelse(Gear==10 | Gear==23,0.68,ifelse(Gear==160,41.20,ifelse(Gear==170,22.09,ifelse(Gear==180,4.65,ifelse(Gear==204 | Gear==205 | Gear==206 | Gear==207 | Gear==208 | Gear==209 | Gear==403 | Gear==404 | Gear==405 | Gear==406 | Gear==409 | Gear==410,NA,ifelse(Gear==350 | Gear==351 | Gear==354,1,NA))))))))))))
 
+
+FL_Shoreline<-readShapePoly("C:/Users/jennm/Dropbox/GITHUB/Tropicalization/data/Florida_Shoreline.shp",proj4string = CRS("+proj=longlat +datum=WGS84"))
 
 study_area<-readShapePoly("C:/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServices/Biodiversity_Data_Exploration/data/FWRI_FIM_SQL_Database_ALL/Florida_Gulf_Study_Area.shp",proj4string = CRS("+proj=longlat +datum=WGS84"))
 
@@ -65,8 +68,8 @@ Atlantic_study_area<-readShapePoly("C:/Users/jennm/Dropbox/GITHUB/Tropicalizatio
 
 
 # #plotting all sites
-plot(FIM_SQL_site_info_fixed$Longitude,FIM_SQL_site_info_fixed$Latitude)
-plot(study_area,add=TRUE)
+plot(FIM_SQL_site_info_fixed$Longitude,FIM_SQL_site_info_fixed$Latitude,color="red")
+plot(FL_Shoreline,add=TRUE)
 plot(Atlantic_study_area,add=TRUE)
 
 
@@ -237,7 +240,6 @@ FIM_Species_Abundance=FIM_SQL_Species_N%>%
   dplyr::summarize(Number=sum(Number))
 
 
-
 Parrotfish=species_list_modified%>%
   filter(Family=="Scaridae")
 
@@ -249,7 +251,6 @@ FIM_Species_Abundance_1997_2017=plyr::join(FIM_SQL_site_info_1997_2017_GearEffor
 
 
 FIM_Species_Abundance_1997_2017_Atlantic=plyr::join(FIM_SQL_site_info_1997_2017_GearEffort_Atlantic,FIM_Species_Abundance,by="Reference",type="inner")
-
 
 
 ##correcting the gear information for the GUlf side 
@@ -331,6 +332,11 @@ write.csv(Top_Species_Overall_By_LatitudeBin_Trophic_Levels,file="output_tables/
 ```{r}
 FIM_Species_Abundance_Tibble_1997_2017_Atlantic=as_data_frame(FIM_Species_Abundance_1997_2017_Atlantic_modified)
 
+
+plot(FIM_Species_Abundance_Tibble_1997_2017_Atlantic$Longitude,FIM_Species_Abundance_Tibble_1997_2017_Atlantic$Latitude)
+plot(FL_Shoreline,add=TRUE)
+
+
 print(FIM_Species_Abundance_Tibble_1997_2017_Atlantic)
 
 summary(FIM_Species_Abundance_Tibble_1997_2017_Atlantic$Number)
@@ -362,7 +368,6 @@ Top_Species_Overall_By_LatitudeBin_Atlantic_Trophic_Levels=plyr::join(as.data.fr
 
 write.csv(Top_Species_Overall_By_LatitudeBin_Atlantic_Trophic_Levels,file="output_tables/Top_Species_Overall_ByLatitudeBin_Atlantic.csv")
 ```
-
 
 
 #Extracting the hydrological time-series from the GUlf side
@@ -418,4 +423,106 @@ FIM_Pinfish_Abundance=FIM_Species_Abundance_1997_2017_modified%>%
 summary(FIM_Pinfish_Abundance)
 
 write.csv(FIM_Pinfish_Abundance,file="output_tables/FIM_Pinfish_Abundance_TimeSeries.csv")
+```
+
+
+
+# pulling together DEP data
+```{r}
+FDEP=read.csv("C:/Users/jennm/Dropbox/PROJECTS/NAS_Seagrass_Project/Data/RAW/Seagrass_Groundtruthing_Data_Scoping/Florida_DEP_Aquatic_Preserve/CombinedMonitoring_FDEP_APP.csv")
+names(FDEP)
+summary(FDEP)
+levels(FDEP$Region)
+
+FDEP=FDEP%>%
+  mutate(BraunBlanquet=Coverage,Blade_Length_Avg_cm=NA,Blade_Width_Avg_cm=NA,Shoots.per.m2=NA)%>%
+  select(Month,Year,Region,Station,Latitude,Longitude,Replicate,Species,BraunBlanquet,Scallops,Urchins,Grass.or.Algae,Total.SAV,Total.Grass,Total.macroAlgae,Epipyhte.Denstiy,Blade_Length_Avg_cm,Blade_Width_Avg_cm,Shoots.per.m2,Sediment.type)
+
+##aquiring SJB shoot and blade length info
+SJB_Species=read.csv("C:/Users/jennm/Dropbox/PROJECTS/NAS_Seagrass_Project/Data/RAW/Seagrass_Groundtruthing_Data_Scoping/Florida_DEP_Aquatic_Preserve/St_Joes_Bay/FDEP_SJB_Species.csv")
+names(SJB_Species)
+head(SJB_Species)
+
+SJB_Abiotic=read.csv("C:/Users/jennm/Dropbox/PROJECTS/NAS_Seagrass_Project/Data/RAW/Seagrass_Groundtruthing_Data_Scoping/Florida_DEP_Aquatic_Preserve/St_Joes_Bay/FDEP_SJB_Abiotic.csv")
+names(SJB_Abiotic)
+head(SJB_Species)
+
+SJB_Species_fixed=plyr::join(SJB_Abiotic[1:5],SJB_Species,by=c("Station","Date","Time"))
+
+SJB_Species_fixed=SJB_Species_fixed%>%
+  mutate(Date=mdy(Date),Month=month(Date),Year=year(Date),Region=c("St Joe Bay"),Latitude=Fixed.Latitude,Longitude=Fixed.Longitude,Replicate=Quad)%>%
+  rowwise()%>%
+  mutate(Blade_Length_Avg_cm=mean(Blade_Length,Blade_Length.1,Blade_Length.2,Blade_Length.3, Blade_Length.4,na.rm=TRUE),Blade_Width_Avg_cm=mean(Blade_Width,Blade_Width.1,Blade_Width.2,Blade_Width.3,Blade_Width.4,na.rm=TRUE),Total.SAV=NA,Total.Grass=NA,Total.macroAlgae=NA,Sediment.type=NA,Grass.or.Algae=NA,Shoots.per.m2=NA)%>%
+  select(Month,Year,Region,Station,Latitude,Longitude,Replicate,Species,BraunBlanquett,Scallops,Urchins,Grass.or.Algae,Total.SAV,Total.Grass,Total.macroAlgae,EpiphyteDensity,Blade_Length_Avg_cm,Blade_Width_Avg_cm,Shoots.per.m2,Sediment.type)
+
+names(SJB_Species_fixed)
+names(FDEP)
+
+
+
+Estero=read.csv("C:/Users/jennm/Dropbox/PROJECTS/NAS_Seagrass_Project/Data/RAW/Seagrass_Groundtruthing_Data_Scoping/Florida_DEP_Aquatic_Preserve/Estero_Bay/DEP_Estero_Bay_Seagarss.csv")
+names(Estero)
+head(Estero)
+
+Estero_fixed=Estero%>%
+  mutate(Date=mdy(Date),Month=month(Date),Year=year(Date),Region=c("Estero Bay"),Replicate=Station,Station=Site,Latitude=NA,Longitude=NA,BraunBlanquet=Species.Abundance..BB.,Total.SAV=Total.Abundance..BB.,Scallops=NA,Urchins=NA,Total.Grass=NA,Total.macroAlgae=NA,Grass.or.Algae=NA,Urchins=NA,Scallops=NA,Blade_Length_Avg_cm=Blade.Length.Avg..cm.,Blade_Width_Avg_cm=NA,Sediment.type=Sediment)%>%
+  select(Month,Year,Region,Station,Latitude,Longitude,Replicate,Species,BraunBlanquet,Scallops,Urchins,Grass.or.Algae,Total.SAV,Total.Grass,Total.macroAlgae,Epiphyte.Density,Blade_Length_Avg_cm,Blade_Width_Avg_cm,Shoots.per.m2,Sediment.type)
+
+names(Estero_fixed)
+names(FDEP)
+
+#making sure that the dataframes have the same columsn
+colnames(Estero_fixed)<-colnames(FDEP)
+colnames(SJB_Species_fixed)<-colnames(FDEP)
+
+
+
+##Stacking DEP datsets together
+FDEP_ALL=rbind.data.frame(FDEP,Estero_fixed)
+FDEP_ALL=rbind.data.frame(FDEP_ALL,SJB_Species_fixed)
+
+
+#Making sure that the factor levels are consistent
+names(FDEP_ALL)
+
+
+FDEP_ALL_Fixed=FDEP_ALL%>%
+  filter(is.na(Year)==FALSE)%>%
+  filter(Species!="." & Species!="" & Species!="No Cover" & Species!="D")%>%
+  mutate(Month=as.character(Month),Month=ifelse(Month=="AUGUST","August",ifelse(Month=="JULY","July",ifelse(Month=="July ","July",ifelse(Month=="JUNE","June",ifelse(Month=="MAY","May",ifelse(Month=="OCTOBER","October",ifelse(Month=="SEPTEMBER","September",ifelse(Month=="August ","August",Month)))))))))%>%
+  mutate(Species=as.character(Species),Species=ifelse(Species=="drift","DRIFT",ifelse(Species=="HWRI ","HWRI",ifelse(Species=="HNIC","HINC",ifelse(Species=="a-Caulerpa prolifera","CPRO",ifelse(Species==" SFIL","SFIL",ifelse(Species=="Caulerpa prolifera","CPRO",ifelse(Species=="a-Caulerpa mexicana","CMEX",ifelse(Species=="a-Caulerpa serituloides","CSER",ifelse(Species=="Unknown","UID",ifelse(Species=="Thalassia","TTES",ifelse(Species=="Syringodium","SFIL",ifelse(Species=="Sargassum buxifolium","SBUX",ifelse(Species=="a-Caulerpa spp.","CXXX",ifelse(Species=="Caulerpa spp.","CXXX",ifelse(Species=="Drift","DRIFT",ifelse(Species=="Halodule","HWRI",ifelse(Species=="Halophila","HXXX",ifelse(Species=="HWIR","HWRI",ifelse(Species=="PCAD","PCAP",ifelse(Species=="Ruppia","RMAR",ifelse(Species=="Unknown Red Algae","UID",ifelse(Species=="Vallisneria","VSPI",ifelse(Species=="Hydrilla","HVER",ifelse(Species=="SARG","SBUX",Species)))))))))))))))))))))))))%>%
+  filter(BraunBlanquet!="NGIQ")%>%
+  mutate(BraunBlanquet=as.character(BraunBlanquet),BraunBlanquet=ifelse(BraunBlanquet=="",NA,ifelse(BraunBlanquet==".",NA,BraunBlanquet)))%>%
+  mutate(Scallops=as.character(Scallops),Scallops=ifelse(Scallops=="",NA,ifelse(Scallops==".",NA,ifelse(Scallops==" ",NA,Scallops))))%>%
+  mutate(Urchins=as.character(Urchins),Urchins=ifelse(Urchins=="",NA,ifelse(Urchins==".",NA,ifelse(Urchins==" ",NA,Urchins))))%>%
+  mutate(Grass.or.Algae=as.character(Grass.or.Algae),Grass.or.Algae=ifelse(Grass.or.Algae=="",NA,ifelse(Grass.or.Algae==".",NA,ifelse(Grass.or.Algae=="Algae","ALGAE",ifelse(Grass.or.Algae=="Grass","GRASS",ifelse(Grass.or.Algae=="NGIQ",NA,Grass.or.Algae))))))%>%
+  mutate(Total.SAV=as.character(Total.SAV),Total.SAV=ifelse(Total.SAV=="",NA,ifelse(Total.SAV==".",NA,Total.SAV)))%>%
+    mutate(Total.Grass=as.character(Total.Grass),Total.Grass=ifelse(Total.Grass=="",NA,ifelse(Total.Grass==".",NA,ifelse(Total.Grass==",",NA,Total.Grass))))%>%
+    mutate(Total.macroAlgae=as.character(Total.macroAlgae),Total.macroAlgae=ifelse(Total.macroAlgae=="",NA,ifelse(Total.macroAlgae==".",NA,ifelse(Total.macroAlgae==",",NA,ifelse(Total.macroAlgae==". ",NA,ifelse(Total.macroAlgae==" ",NA,Total.macroAlgae))))))%>%
+    mutate(Epipyhte.Denstiy=as.character(Epipyhte.Denstiy),Epipyhte.Denstiy=ifelse(Epipyhte.Denstiy=="",NA,ifelse(Epipyhte.Denstiy==".",NA,ifelse(Epipyhte.Denstiy=="Clean","CLEAN",ifelse(Epipyhte.Denstiy=="Clean ","CLEAN",ifelse(Epipyhte.Denstiy=="Heavy","HEAVY",ifelse(Epipyhte.Denstiy=="Heavy ","HEAVY",ifelse(Epipyhte.Denstiy=="HEAVY ","HEAVY",ifelse(Epipyhte.Denstiy=="LGHT","LIGHT",ifelse(Epipyhte.Denstiy=="LGIHT","LIGHT",ifelse(Epipyhte.Denstiy=="Light","LIGHT",ifelse(Epipyhte.Denstiy=="Light ","LIGHT",ifelse(Epipyhte.Denstiy=="LIGHT ","LIGHT",ifelse(Epipyhte.Denstiy=="Moderatae","MODERATE",ifelse(Epipyhte.Denstiy=="moderate","MODERATE",ifelse(Epipyhte.Denstiy=="Moderate ","MODERATE",ifelse(Epipyhte.Denstiy=="MODERATE ","MODERATE",ifelse(Epipyhte.Denstiy=="Modetate","MODERATE",ifelse(Epipyhte.Denstiy=="N/A",NA,ifelse(Epipyhte.Denstiy=="1-Clean","CLEAN",ifelse(Epipyhte.Denstiy=="2-Light","LIGHT",ifelse(Epipyhte.Denstiy=="3-Moderate","MODERATE",ifelse(Epipyhte.Denstiy=="4-Heavy","HEAVY",ifelse(Epipyhte.Denstiy=="H","HEAVY",ifelse(Epipyhte.Denstiy=="L","Light",ifelse(Epipyhte.Denstiy=="M","MODERATE",ifelse(Epipyhte.Denstiy=="CLEAN ","CLEAN",ifelse(Epipyhte.Denstiy=="LiGHT","LIGHT",ifelse(Epipyhte.Denstiy=="Moderate","MODERATE",ifelse(Epipyhte.Denstiy=="Moderatte","MODERATE",ifelse(Epipyhte.Denstiy=="Light","LIGHT",Epipyhte.Denstiy)))))))))))))))))))))))))))))))%>%
+  mutate(Grass.or.Algae=ifelse(Species=="TTES","Seagrass",ifelse(Species=="HWRI","Seagrass",ifelse(Species=="RMAR","Seagrass",ifelse(Species=="SFIL","Seagrass",ifelse(Species=="HENG","Seagrass",ifelse(Species=="HXXX","Seagrass","Algae")))))))%>%
+  droplevels()
+
+
+summary(as.factor(FDEP_ALL_Fixed$Month))
+summary(FDEP_ALL_Fixed$Year)
+summary(FDEP_ALL_Fixed$Station)
+summary(as.factor(FDEP_ALL_Fixed$Species))
+summary(as.factor(FDEP_ALL_Fixed$BraunBlanquet))
+summary(as.factor(FDEP_ALL_Fixed$Scallops))
+summary(as.factor(FDEP_ALL_Fixed$Urchins))
+summary(as.factor(FDEP_ALL_Fixed$Grass.or.Algae))
+summary(as.factor(FDEP_ALL_Fixed$Total.SAV))
+summary(as.factor(FDEP_ALL_Fixed$Total.Grass))
+summary(as.factor(FDEP_ALL_Fixed$Total.macroAlgae))
+summary(as.factor(FDEP_ALL_Fixed$Epipyhte.Denstiy))
+summary((FDEP_ALL_Fixed$Blade_Length_Avg_cm))
+summary((FDEP_ALL_Fixed$Blade_Width_Avg_mm))
+summary((FDEP_ALL_Fixed$Shoots.per.m2))
+summary(as.factor(FDEP_ALL_Fixed$Sediment.type))
+
+
+write.csv(FDEP_ALL_Fixed,file="output_tables/Combined_FDEP_AquaticPreserves_SeagrassData.csv")
+
+
 ```
