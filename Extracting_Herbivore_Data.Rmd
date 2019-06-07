@@ -410,10 +410,7 @@ write.csv(FIM_Temperature_TS_1997_2017,file = "output_tables/FIM_Temperature_TS_
 
 #Extracting Pinfish Data from the Gulf side
 ```{r}
-names(FIM_Species_Abundance_1997_2017_modified)
-head(FIM_Species_Abundance_1997_2017_modified)
-
-names(FIM_Species_Abundance_1997_2017_modified)[6]<-c("depth")
+names(FIM_Species_Abundance_1997_2017_modified)[14]<-c("depth")
 
 FIM_Pinfish_Abundance=FIM_Species_Abundance_1997_2017_modified%>%
   filter(NODCCODE=="8835430201")%>%
@@ -423,6 +420,60 @@ FIM_Pinfish_Abundance=FIM_Species_Abundance_1997_2017_modified%>%
 summary(FIM_Pinfish_Abundance)
 
 write.csv(FIM_Pinfish_Abundance,file="output_tables/FIM_Pinfish_Abundance_TimeSeries.csv")
+```
+
+
+
+#Extracting Seagrass Species, Crabs, and Scallop Data from the Gulf side
+```{r}
+Scallops=species_list%>%
+    filter(stringr::str_detect(Commonname, 'Scallop'))
+
+
+Scallop_Abund=plyr::join(as.data.frame(Scallops),as.data.frame(FIM_Species_Abundance),by="NODCCODE",type="left")
+
+Crabs=species_list%>%
+    filter(stringr::str_detect(Commonname, 'Crab'))
+
+Crab_Abund=plyr::join(as.data.frame(Crabs),as.data.frame(FIM_Species_Abundance),by="NODCCODE",type="left")
+
+
+FIM_Crabs_Scallops_Abund=rbind(Crab_Abund,Scallop_Abund)
+
+
+
+FIM_Crabs_Scallops_Abundance_1997_2017=plyr::join(FIM_SQL_site_info_1997_2017_GearEffort,FIM_Crabs_Scallops_Abund,by="Reference",type="inner")
+
+
+##correcting the gear information for the GUlf side 
+FIM_Crabs_Scallops_Abundance_1997_2017_modified=FIM_Crabs_Scallops_Abundance_1997_2017%>%
+  mutate(Latitudinal_Bin=ifelse(Latitude<=26,"25-26",ifelse(Latitude<=27 & Latitude>26,"26-27",ifelse(Latitude<=28 & Latitude>27,"27-28",ifelse(Latitude<=29 & Latitude>28,"28-29",ifelse(Latitude<=30 & Latitude>29,"29-30",">30"))))))%>%
+  droplevels()%>%
+  filter(Gear_Description!="183m terminal bag purse seine")%>%
+  filter(Gear_Description!="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.  Net Not Set.")%>%
+  filter(Gear_Description!="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walsl.  Net used in directed redfish study.  Blind Set.")%>%
+  filter(Gear_Description!="Hook and Line")%>% #removing hook and line
+  filter(Gear_Description!="No Set")%>% #removing "no set" hauls
+  mutate(Gear_Description=ifelse(Gear_Description=="183m center-bag seine","183m seine",ifelse(Gear_Description=="21.3 center-bag seine","21.3m seine",ifelse(Gear_Description=="21.3m center-bag seine","21.3m seine", ifelse(Gear_Description=="366m monofilament trammel net. 2.4m deep","366m monofilament trammel net",ifelse(Gear_Description=="547m nylon trammel net with 117mm stretch mesh inner wall and 330mm stretch mesh outer walls.  Net used in directed redfish study.","547m nylon trammel net", ifelse(Gear_Description=="6.1m otter trawl w/ 3.1mm liner & tickler chain.  A straight tow.","6.1m otter trawl",ifelse(Gear_Description=="6.1m otter trawl w/ 3.1mm liner & tickler chain.  An arc tow.","6.1m otter trawl", ifelse(Gear_Description=="61m center-bag seine","61m seine", ifelse(Gear_Description=="9.1-m center bag seine","9.1m seine", ifelse(Gear_Description=="Hook and line","Hook and line", ifelse(Gear_Description=="Offshore purse seine with spotter planes to collect adult Red Drum","Offshore Purse Seine",ifelse(Gear_Description=="Nylon trammel net 273m - Blind set.  Used for directed red drum hatchery project.  Fall 2000","273m nylon trammel net",ifelse(Gear_Description=="Nylon trammel net 273m - Normal set.  Used for directed red drum hatchery project Fall 2000","273m nylon trammel net","No Set"))))))))))))))%>%
+  mutate(Gear_Description=as.factor(Gear_Description))%>%
+  droplevels()%>%
+  mutate(Number_pertow=Number,Number_per100sqm=Number/Effort)%>%
+  select(Reference,Sampling_Date,Gear_Description,Longitude,Latitude, Scientificname,Commonname,Number_pertow,Number_per100sqm)
+
+
+Seagrass_Data=read.csv("/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServices/Biodiversity_Data_Exploration/FIM_Final_Biodiversity_Dataframe.csv")
+
+names(Seagrass_Data)
+
+FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass=plyr::join(FIM_Crabs_Scallops_Abundance_1997_2017_modified,Seagrass_Data[c(5,15,23,34:36)])
+
+FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass=FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass%>%
+  filter(is.na(BottomVegCover)==FALSE)
+
+
+summary(FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass)
+
+write.csv(FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass,file="output_tables/FIM_Seagrass_Crabs_Scallop_Abund_Data_Records.csv")
 ```
 
 
