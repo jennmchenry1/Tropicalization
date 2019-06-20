@@ -465,11 +465,11 @@ Seagrass_Data=read.csv("/Users/jennm/Dropbox/GITHUB/NASEM_Seagrass_EcosystemServ
 
 names(Seagrass_Data)
 
-FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass=plyr::join(FIM_Crabs_Scallops_Abundance_1997_2017_modified,Seagrass_Data[c(5,15,23,34:36)])
+FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass=plyr::join(FIM_Crabs_Scallops_Abundance_1997_2017_modified,Seagrass_Data[c(5,80,13:15,34:36)])
+names(FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass)
 
 FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass=FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass%>%
   filter(is.na(BottomVegCover)==FALSE)
-
 
 summary(FIM_Crabs_Scallops_Abundance_1997_2017_modified_Seagrass)
 
